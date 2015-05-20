@@ -253,6 +253,7 @@ Halv_spawn_player = {
 	_spawn set [2,0];
 	_position = [0,0,0];
 	_t = diag_tickTime;
+	systemChat "Seraching for position ...";
 	_try = 0;
 	while{true}do{
 		_try = _try +1;

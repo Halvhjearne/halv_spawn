@@ -10,7 +10,7 @@ _level2UIDs = TheHALV_HIGH__list+TheHALV_DONOR__list;
 //this is to allow any lvl 2 to spawn on lvl 1, comment out to seperate the two
 _level1UIDs = _level1UIDs + _level2UIDs;
 
-//Spawn area radius
+//Spawn area radius, setting this low might make bis_fnc_findsafepos fail and place the player in the middle of the map
 _area = 1250;
 
 //force halo jump or ground spawn 0 = user choice, 1 = forced HALO, 2 = forced Ground true/false

@@ -11,9 +11,9 @@
 */
 
 //UID's for lvl 1 gear
-_level1UIDs = TheHALV_REGISTERED__list;
+_level1UIDs = [];
 //UID's for lvl 2 gear
-_level2UIDs = TheHALV_HIGH__list+TheHALV_DONOR__list;
+_level2UIDs = [];
 //this is to allow lvl 2 to use any lvl 1 gear, comment out to seperate the two
 _level1UIDs = _level1UIDs + _level2UIDs;
 

@@ -4,9 +4,9 @@
 */
 
 //UID's for lvl 1 spawn's
-_level1UIDs = TheHALV_REGISTERED__list;
+_level1UIDs = [];
 //UID's for lvl 2 spawn's
-_level2UIDs = TheHALV_HIGH__list+TheHALV_DONOR__list;
+_level2UIDs = [];
 //this is to allow any lvl 2 to spawn on lvl 1, comment out to seperate the two
 _level1UIDs = _level1UIDs + _level2UIDs;
 

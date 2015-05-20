@@ -398,7 +398,7 @@ class HALV_RscListBox
 	colorSelect2[] = {0, 0, 0, 1};
 	colorSelectBackground[] = {0.95, 0.95, 0.95, 1};
 	colorSelectBackground2[] = {1, 1, 1, 0.5};
-	colorBackground[] = {0.2,0.2,0.2,1};
+	colorBackground[] = {0.2,0.2,0.2,0.6};
 	pictureColor[] = {1,1,1,1}; // Picture color
 	pictureColorSelect[] = {1,1,1,1}; // Selected picture color
 	pictureColorDisabled[] = {1,1,1,0.5}; // Disabled picture color
@@ -439,7 +439,7 @@ class HALV_CT_TREE
 	w = 0.438144 * safezoneW;
 	h = 0.725818 * safezoneH;
 	colorBorder[] = {0,.5,1,.8}; // Frame color
-	colorBackground[] = {0.2,0.2,0.2,1}; // Fill color
+	colorBackground[] = {0.2,0.2,0.2,0.6}; // Fill color
 	colorSelect[] = {1,0.5,0,1}; // Selected item fill color (when multiselectEnabled is 0)
 	colorMarked[] = {1,0.5,0,0.5}; // Marked item fill color (when multiselectEnabled is 1)
 	colorMarkedSelected[] = {1,0.5,0,1}; // Selected item fill color (when multiselectEnabled is 1)

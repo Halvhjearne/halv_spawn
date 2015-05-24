@@ -29,7 +29,7 @@ _alltext = [
 	"Server Admins :",
 	"#25B25B", //Green
 	[
-	"Halv"
+		"Halv","Deathstroke"
 	]
 	],
 	[
@@ -43,7 +43,7 @@ _alltext = [
 		"Server Mods :",
 		"#0096ff", //Blue Light
 		[
-			"AI + Missions","Call In Airdrops","Craft Bike (comming)","Select Gear / HALO Spawn","Special Traders",
+			"AI + Missions","Call In Airdrops","Craft Bike (comming)","Select Gear / HALO Spawn","Special (no limit) Traders",
 			"Lift and Tow","Nitro (USER19) (soon)","No DLC Locked Vehicles","Repair / Re-Arm Stations","Vehicle Paint Shops",
 
 			"And Much more ..."

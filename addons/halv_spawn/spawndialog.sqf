@@ -253,14 +253,14 @@ Halv_spawn_player = {
 	_spawn set [2,0];
 	_position = [0,0,0];
 	_t = diag_tickTime;
-	systemChat "Seraching for position ...";
+	systemChat "Searching for position ...";
 	_try = 0;
 	while{true}do{
 		_try = _try +1;
 		_position = [_spawn,0,_area,2,0,2000,0] call BIS_fnc_findSafePos;
 		if(_position distance _spawn > 0 && _position distance _spawn < _area || _try == 100)exitWith{if(_try == 100)then{_position = _spawn;};};
 	};
-	systemChat format["Found position in %2 try(s) ... %1",diag_tickTime - _t,_try];
+	systemChat format["Found position in %2 try(s) ... %1 seconds",diag_tickTime - _t,_try];
 	_selectorforce = false;
 	if(_HALV_forcespawnMode < 1)then{if(HALV_HALO)then{_selectorforce = true;};}else{if(_HALV_forcespawnMode == 1)then{_selectorforce = true;};};
 	if(_selectorforce)then{

@@ -29,28 +29,28 @@ if(isServer)then{
 	_pic1 = [
 //North wall
 //build this picture/texture? (true / false)
-		true,
+		false,
 //Change to your picture/path here
 		"custom\problemsolving.jpg"
 	];
 	_pic2 = [
 	//East wall
 //build this picture/texture? (true / false)
-		true,
+		false,
 //Change to your picture/path here
 		"custom\dkflag.jpg"
 	];
 	_pic3 = [
 	//South wall
 //build this picture/texture? (true / false)
-		true,
+		false,
 //Change to your picture/path here
 		"custom\loadscreen.jpg"
 	];
 	_pic4 = [
 	//West wall
 //build this picture/texture? (true / false)
-		true,
+		false,
 //Change to your picture/path here
 		"custom\dkflag.jpg"
 	];
@@ -62,7 +62,7 @@ if(isServer)then{
 	_deftelepos = [];
 	{_deftelepos pushBack (_x select 3)}forEach _HALV_deftele;
 	diag_log format["[halv_spawn] waiting for default 'Debug_static_F' to be build in %1 @ (%2) %3",worldName,mapGridPosition _respawnwest,_respawnwest];
-	waitUntil {sleep 1;(count(nearestObjects [_respawnwest, ["Debug_static_F"], 30]) > 0)};
+	waitUntil {sleep 1;(count(_respawnwest nearObjects ["Debug_static_F",30]) > 0)};
 	if(count _HALV_deftele > 0)then{waitUntil {sleep 1;(count(nearestObjects [_respawnwest, _teleobjs, 30]) == count _HALV_deftele)};};
 	_objects = nearestObjects [_respawnwest, _teleobjs, 35];
 	_box = nearestObject [_respawnwest, "Debug_static_F"];

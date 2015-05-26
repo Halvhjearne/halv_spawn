@@ -34,8 +34,8 @@ if(_spawnNearJammer)then{
 			diag_log format["[halv_spawn] found a player jammer @ %1",_jamvar];
 			_name = _jamvar call Halv_near_cityname;
 			Halv_spawns pushBack [_jamvar,6,format["%1 (%2)",_name,localize "STR_HALV_NEAR_JAMMER"]];
-		};
-	}count (nearestObjects [HALV_Center, ["PlotPole_EPOCH"], _jamarea]);
+		}; 
+	}forEach (HALV_Center nearObjects ["PlotPole_EPOCH",_jamarea]);
 };
 
 if(_spawnNearGroup)then{

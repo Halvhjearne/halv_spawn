@@ -49,7 +49,8 @@ class HALV_RscMapControl
 	colorOutside[] = {0, 0, 0, 1};
 	colorText[] = {0, 0, 0, 1};
 	font = "TahomaB";
-	sizeEx = 0.04;
+//	sizeEx = 0.04;
+	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.04)";
 	colorSea[] = {0.467, 0.631, 0.851, 0.5};
 	colorForest[] = {0.624, 0.78, 0.388, 0.5};
 	colorRocks[] = {0, 0, 0, 0.3};
@@ -443,7 +444,7 @@ class HALV_CT_TREE
 	colorSelect[] = {1,0.5,0,1}; // Selected item fill color (when multiselectEnabled is 0)
 	colorMarked[] = {1,0.5,0,0.5}; // Marked item fill color (when multiselectEnabled is 1)
 	colorMarkedSelected[] = {1,0.5,0,1}; // Selected item fill color (when multiselectEnabled is 1)
-	sizeEx = 0.045; // Text size
+	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";// Text size
 	font = "EtelkaMonospacePro"; // Font from CfgFontFamilies
 	shadow = 1; // Shadow (0 - none, 1 - N/A, 2 - black outline)
 	colorText[] = {1,1,1,1}; // Text color

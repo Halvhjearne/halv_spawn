@@ -5,8 +5,6 @@ if(isServer)exitWith{};
 */
 sleep 2.5; // sleep before the welcome message starts (in seconds)
 
-playsound "intro_tune";
-
 _alltext = [
 	[
 		//Title

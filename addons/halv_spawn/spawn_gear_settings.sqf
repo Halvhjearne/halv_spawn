@@ -22,7 +22,7 @@ _geararr = [
 //this is the array of secondary weapons the player can choose from, this has to be "weapon" type items
 		[
 			"hgun_ACPC2_F","ruger_pistol_epoch","1911_pistol_epoch","hgun_P07_F","hgun_Pistol_heavy_01_F","hgun_Pistol_heavy_02_F","hgun_Rook40_F",
-			"hgun_Pistol_Signal_F","Hatchet"
+			"hgun_Pistol_Signal_F","Hatchet"//,"ChainSaw"
 		],
 //this is how many magazines is added for secondary weapon
 		4
@@ -30,8 +30,8 @@ _geararr = [
 	[
 //this is the array of primary weapons the player can choose from, this has to be "weapon" type items
 		[
-			"SMG_01_F","SMG_02_F","hgun_PDW2000_F","m16_EPOCH","m16Red_EPOCH","Rollins_F","AKM_EPOCH","sr25_epoch","l85a2_epoch","l85a2_pink_epoch","l85a2_ugl_epoch",
-			"speargun_epoch"//,"ChainSaw"
+			"SMG_01_F","SMG_02_F","hgun_PDW2000_F","Rollins_F","speargun_epoch","m16_EPOCH","m16Red_EPOCH","AKM_EPOCH","sr25_epoch",
+			"l85a2_epoch","l85a2_pink_epoch","l85a2_ugl_epoch"
 		],
 //this is how many magazines is added for primary weapon
 		3
@@ -48,7 +48,7 @@ _geararr = [
 	[
 		[
 			"EpochRadio0","EpochRadio1","EpochRadio2","EpochRadio3","EpochRadio4","EpochRadio5","EpochRadio6","EpochRadio7","EpochRadio8","EpochRadio9",
-			"ItemCompass","ItemWatch","Binocular","ItemGPS"//,"ItemMap","NVG_EPOCH"
+			"ItemCompass","ItemWatch","Binocular","ItemMap","NVG_EPOCH","ItemGPS"
 		],
 //this is how many "weapon" items the player is allowed to choose
 		3

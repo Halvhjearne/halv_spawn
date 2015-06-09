@@ -1,17 +1,46 @@
+#include "spawn_gear_settings.sqf";
+
 if(isServer)exitWith{};
 _rspawnw = getMarkerPos "respawn_west";
 // Makes the script start when player is ingame
 waitUntil{!isNil "Epoch_my_GroupUID"};
-/*
-waitUntil {!isNull (findDisplay 46)};
-waitUntil {!dialog};
-*/
+
 //exit if player is not near a spawn
-if(player distance _rspawnw > 25)exitWith{Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTGEAR = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;diag_log "Spawn Menu Aborted...";};
+if(player distance _rspawnw > 25)exitWith{Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;diag_log "Spawn Menu Aborted...";};
 waitUntil {!dialog};
 
 _diagTiackTime = diag_tickTime;
 diag_log format["Loading Spawn Menu ... %1",_diagTiackTime];
+
+_pregearcheck = profileNamespace getVariable ["HALVSPAWNLASTGEAR",[[],[],[],[],[],[],[],[],[],[]]];
+if !(_pregearcheck isEqualTo [[],[],[],[],[],[],[],[],[],[]])then{
+	_gchanged = false;
+	{
+		_garray = _x;
+		_serverarr = switch(_forEachIndex)do{
+			case 0:{[(_geararr select 0)select 0,1]};
+			case 1:{[(_geararr select 1)select 0,1]};
+			case 2:{[(_geararr select 2)select 0,(_geararr select 2)select 1]};
+			case 3:{[(_geararr select 3)select 0,(_geararr select 3)select 1]};
+			case 4:{[(_geararr select 4)select 0,(_geararr select 4)select 1]};
+			case 5:{[_geararr select 5,1]};
+			case 6:{[_geararr select 6,1]};
+			case 7:{[((_geararr select 7)select 0)+((_geararr select 7)select 1),1]};
+			case 8:{[_geararr select 8,1]};
+			case 9:{[_geararr select 9,1]};
+		};
+		{
+			_item = _x;
+//			diag_log str[_item,_serverarr,_garray];
+			if !(_x in (_serverarr select 0))exitWith{
+				_gchanged = true;
+			};
+		}forEach _garray;
+		if (_gchanged || count _garray > (_serverarr select 1))exitWith{
+			profileNamespace setVariable ["HALVSPAWNLASTGEAR",nil];
+		};
+	}forEach _pregearcheck;
+};
 
 #include "spawn_locations.sqf";
 
@@ -61,7 +90,7 @@ Halv_moveMap = {
 	_value = _lb lbValue _index;
 	_zoom = 1;
 	_spawn = HALV_Center;
-	if !(_value in [-1,-2]) then {
+	if !(_value in [-1,-2,-3]) then {
 		_spawn = (Halv_spawns select _value)select 0;
 		_zoom = .15;
 	};
@@ -95,7 +124,8 @@ Halv_spawn_player = {
 	_index = _this select 1;
 	_value = _lb lbValue _index;
 	if(_value == -1)exitWith{};
-	if(_value == -2)then{
+	if(_value == -2)exitWith{systemChat (localize "STR_HALV_CANTSPAWNNEARBODY")};
+	if(_value == -3)then{
 		_spawn = (Halv_spawns call BIS_fnc_selectRandom) select 0;
 		_val= 0 ;
 		_cityname = _spawn call Halv_near_cityname;
@@ -105,7 +135,6 @@ Halv_spawn_player = {
 		_cityname = if(count (Halv_spawns select _value) > 2)then{(Halv_spawns select _value)select 2}else{_spawn call Halv_near_cityname};
 	};
 	_pUID = getPlayerUID player;
-	if(_val == 5)exitWith{systemChat (localize "STR_HALV_CANTSPAWNNEARBODY")};
 	if(_val == 1 && !(_pUID in _level1UIDs))exitWith{systemChat localize "STR_HALV_NEEDTOBEREG"};
 	if(_val == 2 && !(_pUID in _level2UIDs))exitWith{systemChat localize "STR_HALV_NEEDTOBEDONER"};
 	closeDialog 0;
@@ -113,6 +142,9 @@ Halv_spawn_player = {
 		removeAllWeapons player;removeAllItems player;removeAllAssignedItems player;
 		{player removeMagazine _x;}count (magazines player);
 		removeUniform player;removeVest player;removeBackpack player;removeGoggles player;removeHeadGear player;
+	};
+	if (!(HALV_GEAR_TOADD isEqualTo [[],[],[],[],[],[],[],[],[],[]]) && !(HALV_GEAR_TOADD isEqualTo (profileNamespace getVariable ["HALVSPAWNLASTGEAR",[[],[],[],[],[],[],[],[],[],[]]])))then{
+		profileNamespace setVariable ["HALVSPAWNLASTGEAR",HALV_GEAR_TOADD];
 	};
 	diag_log str['HALV_GEAR_TOADD',HALV_GEAR_TOADD];
 	if(_addgear)then{
@@ -248,7 +280,7 @@ Halv_spawn_player = {
 	};
 	if(_addmap)then{player addWeapon "ItemMap";};
 	
-	diag_log format["[halv_spawn] PlayerGear: weapons: %1 items: %2 assignedItems: %4 magazines: %3",weapons player,items player,magazines player,assignedItems player];
+//	diag_log format["[halv_spawn] PlayerGear: weapons: %1 items: %2 assignedItems: %4 magazines: %3",weapons player,items player,magazines player,assignedItems player];
 
 	_spawn set [2,0];
 	_position = [0,0,0];
@@ -283,7 +315,7 @@ Halv_spawn_player = {
 		titleText[format[localize "STR_HALV_SPAWNEDNEAR",_cityname,name player],"PLAIN DOWN"];
 	};
 	if(_script != "")then{execVM _script;};
-	Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTGEAR = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;
+	Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;
 };
 
 HALV_switch_spawngear = {
@@ -303,7 +335,6 @@ HALV_switch_spawngear = {
 Halv_fill_spawn = {
 	#include "spawn_settings.sqf";
 	HALV_SELECTSPAWN = true;
-	HALV_SELECTGEAR = false;
 	disableSerialization;
 	_ctrl = (findDisplay 7777) displayCtrl 7779;_ctrl ctrlShow false;
 	_ctrl = (findDisplay 7777) displayCtrl 7781;
@@ -336,12 +367,7 @@ Halv_fill_spawn = {
 		{
 			if(_x distance _pos < _bodyCheckDist)exitWith{
 				_lvl = 5;
-				_let = count (Halv_spawns select _fi);
-				if(_let > 2)then{
-					Halv_spawns set [_fi,[_pos,_lvl,_name]];
-				}else{
-					Halv_spawns set [_fi,[_pos,_lvl]];
-				};
+				_ctrl lbSetValue [_index,-2];
 			};
 		}forEach _bodies;
 		switch (_lvl) do{
@@ -432,6 +458,10 @@ HALV_player_removelisteditem = {
 	_ctrl = _this select 0;
 	_lb = _this select 1;
 	if(_lb == 0)exitWith{call Halv_fill_spawn;};
+	if(_lb == 1)exitWith{
+		HALV_GEAR_TOADD = profileNamespace getVariable ["HALVSPAWNLASTGEAR",[[],[],[],[],[],[],[],[],[],[]]];
+		call Halv_fill_spawn;
+	};
 };
 
 Halv_ontreeselected = {
@@ -542,7 +572,6 @@ Halv_ontreedoubleclick = {
 
 HALV_fill_gear = {
 	#include "spawn_gear_settings.sqf";
-	HALV_SELECTGEAR = true;
 	HALV_SELECTSPAWN = false;
 	HALV_GEAR_TOADD = [[],[],[],[],[],[],[],[],[],[]];
 	disableSerialization;
@@ -556,6 +585,13 @@ HALV_fill_gear = {
 	_ctrl lbSetPicture [_index,"\a3\Ui_f\data\IGUI\Cfg\Actions\ico_cpt_start_on_ca.paa"];
 	_ctrl lbSetPictureColor [_index, [1, 1, 1, 1]];
 	_ctrl lbSetPictureColorSelected [_index, [0, 0, 0, 1]];
+	if !((profileNamespace getVariable ["HALVSPAWNLASTGEAR",[[],[],[],[],[],[],[],[],[],[]]]) isEqualTo [[],[],[],[],[],[],[],[],[],[]])then{
+		_index = _ctrl lbAdd "Last used Gearset";
+		_ctrl lbSetColor [_index,[0,0.5,1,.7]];
+		_ctrl lbSetPicture [_index,"\a3\Ui_f\data\gui\cfg\CommunicationMenu\transport_ca.paa"];
+		_ctrl lbSetPictureColor [_index, [1, 1, 1, 1]];
+		_ctrl lbSetPictureColorSelected [_index, [0, 0, 0, 1]];
+	};
 	_ctrl lbSetCurSel _index;
 	_puid = getPlayerUID player;
 	_ctrl = (findDisplay 7777) displayCtrl 7779;_ctrl ctrlShow true;

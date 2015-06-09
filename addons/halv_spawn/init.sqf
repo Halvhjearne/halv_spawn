@@ -118,7 +118,6 @@ if(isServer)then{
 			_pics = _pics + 1;
 		};
 	}forEach _alltextures;
-
 	HALV_senddeftele = [_teleobjs,_deftelepos];
 	publicVariable "HALV_senddeftele";
 	diag_log format["[halv_spawn] sendt teleporters and default positions to clients, %1 textures build",_pics];
@@ -130,5 +129,5 @@ if(hasInterface)then{
 	waitUntil{!isNil "HALV_senddeftele"};//iconjoin_ca
 	{_x addAction ["<img size='1.5'image='\a3\Ui_f\data\IGUI\Cfg\Actions\ico_cpt_start_on_ca.paa'/> <t color='#0096ff'>Select</t><t > </t><t color='#00CC00'>Spawn</t>",(_scriptpath+"opendialog.sqf"),_x, -9, true, true, "", "_this distance _target < 5"];}forEach (HALV_senddeftele select 0);
 	diag_log format["[halv_spawn] addAction added to %1",HALV_senddeftele];
-	execVM (_scriptpath+"spawndialog.sqf");
+	[] execVM (_scriptpath+"spawndialog.sqf");
 };

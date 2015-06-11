@@ -119,7 +119,8 @@ HALV_fnc_halo = {
 	sleep 1;
 	player addAction [localize "STR_HALO_OPEN_CHUTE",{player removeAction (_this select 2);HALV_openchute = true;}];
 
-	waitUntil{HALV_openchute};
+	waitUntil{!isNil "HALV_openchute"};
+	HALV_openchute = nil;
 	private ["_pos","_para"];
 
 	_pos = getPosATL player;

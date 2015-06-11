@@ -63,8 +63,8 @@ if(isServer)then{
 	{_deftelepos pushBack (_x select 3)}forEach _HALV_deftele;
 	diag_log format["[halv_spawn] waiting for default 'Debug_static_F' to be build in %1 @ (%2) %3",worldName,mapGridPosition _respawnwest,_respawnwest];
 	waitUntil {sleep 1;(count(_respawnwest nearObjects ["Debug_static_F",30]) > 0)};
-	if(count _HALV_deftele > 0)then{waitUntil {sleep 1;(count(nearestObjects [_respawnwest, _teleobjs, 30]) == count _HALV_deftele)};};
-	_objects = nearestObjects [_respawnwest, _teleobjs, 35];
+	if(count _HALV_deftele > 0)then{waitUntil {sleep 1;(count(_respawnwest nearObjects ["Transport_EPOCH", 35]) == count _HALV_deftele)};};
+	_objects = _respawnwest nearObjects ["Transport_EPOCH", 35];
 	_box = nearestObject [_respawnwest, "Debug_static_F"];
 	_teleobjs = [];
 	if(count _objects > 0)then{

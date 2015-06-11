@@ -6,7 +6,7 @@ _rspawnw = getMarkerPos "respawn_west";
 waitUntil{!isNil "Epoch_my_GroupUID"};
 
 //exit if player is not near a spawn
-if(player distance _rspawnw > 25)exitWith{Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;diag_log "Spawn Menu Aborted...";};
+if(player distance _rspawnw > 35)exitWith{Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;HALV_fnc_halo = nil;diag_log "Spawn Menu Aborted...";};
 waitUntil {!dialog};
 
 _diagTiackTime = diag_tickTime;
@@ -113,6 +113,40 @@ HALV_addiweaponwithammo = {
 	player addWeapon _this;
 	player selectWeapon _this;
 	reload player;
+};
+
+HALV_fnc_halo = {
+	sleep 1;
+	player addAction [localize "STR_HALO_OPEN_CHUTE",{player removeAction (_this select 2);HALV_openchute = true;}];
+
+	waitUntil{HALV_openchute};
+	private ["_pos","_para"];
+
+	_pos = getPosATL player;
+
+	if (_pos select 2 < 10) then{
+		_para = createVehicle ["NonSteerable_Parachute_F", _pos, [], 0, "FLY"];
+		_para setPosATL _pos;
+		_para setDir getDir player;
+	}else{
+		_para = createVehicle ["Steerable_Parachute_F", _pos, [], 0, "CAN_COLLIDE"];
+		_para setPosATL _pos;
+		_para setDir getDir player;
+	};
+
+	_para disableCollisionWith player;
+	player moveInDriver _para;
+	_para setVelocity [0,0,0];
+
+	waitUntil {isTouchingGround player || !alive player};
+
+	if (!isNull _para) then{
+		_para setVelocity [0,0,0];
+		sleep 0.5;
+		if (vehicle player == _para) then { moveOut player };
+		sleep 1.5;
+		deleteVehicle _para;
+	};
 };
 
 Halv_spawn_player = {
@@ -297,8 +331,8 @@ Halv_spawn_player = {
 	if(_HALV_forcespawnMode < 1)then{if(HALV_HALO)then{_selectorforce = true;};}else{if(_HALV_forcespawnMode == 1)then{_selectorforce = true;};};
 	if(_selectorforce)then{
 		_position set [2,_jumpheight];
-		[player,_jumpheight] spawn BIS_fnc_halo;
 		player setPosATL _position;
+		[] spawn HALV_fnc_halo;
 		titleText [format[localize "STR_HALV_HALOSPAWNEDNEAR",_cityname,name player],"PLAIN DOWN"];
 		[]spawn{
 			sleep 4;
@@ -315,7 +349,7 @@ Halv_spawn_player = {
 		titleText[format[localize "STR_HALV_SPAWNEDNEAR",_cityname,name player],"PLAIN DOWN"];
 	};
 	if(_script != "")then{execVM _script;};
-	Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;
+	Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;HALV_fnc_halo = nil;
 };
 
 HALV_switch_spawngear = {
@@ -428,7 +462,7 @@ Halv_fill_spawn = {
 	_ctrl lbSetValue [_index,-1];
 	_index = _ctrl lbAdd (localize "STR_HALV_RANDOM");
 	_ctrl lbSetColor [_index,[0,0.5,1,.7]];
-	_ctrl lbSetValue [_index,-2];
+	_ctrl lbSetValue [_index,-3];
 	_ctrl lbSetPicture [_index,"\a3\Ui_f\data\IGUI\Cfg\Actions\ico_cpt_start_on_ca.paa"];
 	_ctrl lbSetPictureColor [_index, [1, 1, 1, 1]];
 	_ctrl lbSetPictureColorSelected [_index, [0, 0, 0, 1]];
@@ -448,7 +482,7 @@ HALV_fnc_returnnameandpic = {
 			_txt = (gettext (configFile >> _type >> _this >> 'displayName'));
 			_libtxt = (gettext (configFile >> _type >> _this >> 'Library' >> 'libTextDesc'));
 		};
-	}count ["cfgweapons","cfgmagazines","cfgvehicles","cfgglasses"];
+	}forEach ["cfgweapons","cfgmagazines","cfgvehicles","cfgglasses"];
 	_return = [_txt,_pic,_libtxt,_type];
 	_return
 };
@@ -586,7 +620,7 @@ HALV_fill_gear = {
 	_ctrl lbSetPictureColor [_index, [1, 1, 1, 1]];
 	_ctrl lbSetPictureColorSelected [_index, [0, 0, 0, 1]];
 	if !((profileNamespace getVariable ["HALVSPAWNLASTGEAR",[[],[],[],[],[],[],[],[],[],[]]]) isEqualTo [[],[],[],[],[],[],[],[],[],[]])then{
-		_index = _ctrl lbAdd "Last used Gearset";
+		_index = _ctrl lbAdd (localize "STR_HALV_LASTUSED");
 		_ctrl lbSetColor [_index,[0,0.5,1,.7]];
 		_ctrl lbSetPicture [_index,"\a3\Ui_f\data\gui\cfg\CommunicationMenu\transport_ca.paa"];
 		_ctrl lbSetPictureColor [_index, [1, 1, 1, 1]];

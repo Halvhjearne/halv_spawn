@@ -1,3 +1,8 @@
+/*
+	spawndialog
+	by Halv
+*/
+
 #include "spawn_gear_settings.sqf";
 
 if(isServer)exitWith{};

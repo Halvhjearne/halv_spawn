@@ -15,6 +15,7 @@ diag_log format["Loading Spawn Menu ... %1",_diagTiackTime];
 _pregearcheck = profileNamespace getVariable ["HALVSPAWNLASTGEAR",[[],[],[],[],[],[],[],[],[],[]]];
 if !(_pregearcheck isEqualTo [[],[],[],[],[],[],[],[],[],[]])then{
 	_gchanged = false;
+	_PID = getPlayerUID player;
 	{
 		_garray = _x;
 		_serverarr = switch(_forEachIndex)do{
@@ -32,7 +33,7 @@ if !(_pregearcheck isEqualTo [[],[],[],[],[],[],[],[],[],[]])then{
 		{
 			_item = _x;
 //			diag_log str[_item,_serverarr,_garray];
-			if !(_x in (_serverarr select 0))exitWith{
+			if (!(_x in (_serverarr select 0)) || _x in _lvl1items && !(_PID in _level1UIDs) || _x in _lvl2items && !(_PID in _level2UIDs))exitWith{
 				_gchanged = true;
 			};
 		}forEach _garray;
@@ -119,23 +120,28 @@ HALV_fnc_halo = {
 	sleep 1;
 	_action = player addAction [localize "STR_HALO_OPEN_CHUTE",{HALV_openchute = true;}];
 
-	waitUntil{sleep 1;(!isNil "HALV_openchute" || (getPosATL player)select 2 <= 10)};
+	waitUntil{sleep 1;(!isNil "HALV_openchute" || !alive player || isTouchingGround player)};
+
 	player removeAction _action;
-	HALV_openchute = nil;
+
+	if(isNil "HALV_openchute")then{
+		player setDammage 1;
+	}else{
+		HALV_openchute = nil;
+	};
+
 	private "_chute";
 
 	_pos = getPosATL player;
 
 	if (_pos select 2 < 10) then{
 		_chute = createVehicle ["NonSteerable_Parachute_F", _pos, [], 0, "FLY"];
-		_chute setPosATL _pos;
-		_chute setDir getDir player;
 	}else{
 		_chute = createVehicle ["Steerable_Parachute_F", _pos, [], 0, "CAN_COLLIDE"];
-		_chute setPosATL _pos;
-		_chute setDir getDir player;
 	};
 
+	_chute setDir getDir player;
+	_chute setPosATL _pos;
 	_chute disableCollisionWith player;
 	player moveInDriver _chute;
 	_chute setVelocity [0,0,0];
@@ -321,14 +327,19 @@ Halv_spawn_player = {
 	_spawn set [2,0];
 	_position = [0,0,0];
 	_t = diag_tickTime;
-	systemChat "Searching for position ...";
+//	systemChat "Searching for position ...";
 	_try = 0;
 	while{true}do{
 		_try = _try +1;
 		_position = [_spawn,0,_area,2,0,2000,0] call BIS_fnc_findSafePos;
 		if(_position distance _spawn > 0 && _position distance _spawn < _area || _try == 100)exitWith{if(_try == 100)then{_position = _spawn;};};
 	};
-	systemChat format["Found position in %2 try(s) ... %1 seconds",diag_tickTime - _t,_try];
+//	systemChat format["Found position in %2 try(s) ... %1 seconds",diag_tickTime - _t,_try];
+	if(_try == 100)then{
+		_failtxt = "[halv_spawn] BIS_fnc_findSafePos Failed to find position in 100 try's ... reverted to exact position!";
+		systemChat _failtxt;
+		diag_log format["%1 %2",_failtxt,_spawn];
+	};
 	_selectorforce = false;
 	if(_HALV_forcespawnMode < 1)then{if(HALV_HALO)then{_selectorforce = true;};}else{if(_HALV_forcespawnMode == 1)then{_selectorforce = true;};};
 	if(_selectorforce)then{

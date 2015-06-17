@@ -13,7 +13,7 @@ _level1UIDs = _level1UIDs + _level2UIDs;
 //Spawn area radius, setting this low might make bis_fnc_findsafepos fail and place the player in the middle of the map
 _area = 1250;
 
-//force halo jump or ground spawn 0 = user choice, 1 = forced HALO, 2 = forced Ground true/false
+//force halo jump or ground spawn 0 = user choice, 1 = forced HALO, 2 = forced Ground
 _HALV_forcespawnMode = 0;
 _jumpheight = 1250;
 

@@ -1,6 +1,8 @@
 /*
 	spawndialog
 	by Halv
+	
+	Copyright (C) 2015  Halvhjearne > README.md
 */
 
 #include "spawn_gear_settings.sqf";

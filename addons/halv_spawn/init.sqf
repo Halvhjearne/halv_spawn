@@ -2,6 +2,8 @@
 	custom spawn init.sqf
 	DebugPic script added ...
 	by Halv
+	
+	Copyright (C) 2015  Halvhjearne > README.md
 */
 
 //==== Set script path if needed =====\\

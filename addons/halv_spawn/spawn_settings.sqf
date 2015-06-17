@@ -1,6 +1,8 @@
 /*
 	spawn dialog misc settings
 	By Halv
+	
+	Copyright (C) 2015  Halvhjearne > README.md
 */
 
 //UID's for lvl 1 spawn's

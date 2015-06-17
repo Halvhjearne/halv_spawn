@@ -1,6 +1,8 @@
 /*
 	spawn dialog location settings
 	By Halv
+	
+	Copyright (C) 2015  Halvhjearne > README.md
 */
 
 //allow spawn near players jammer? only one is registered, so no point in multiple jammers

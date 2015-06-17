@@ -1,3 +1,10 @@
+/*
+	custom spawn script
+	by Halv
+	
+	Copyright (C) 2015  Halvhjearne > README.md
+*/
+
 #include "spawn_settings.sqf";
 if(isNil "Halv_fill_spawn")exitWith{};
 createdialog "Halv_spawn_dialog";

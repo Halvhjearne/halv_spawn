@@ -2,6 +2,8 @@ if(isServer)exitWith{};
 /*
 	Simple Credits script
 	by Halv
+	
+	Copyright (C) 2015  Halvhjearne > README.md
 */
 sleep 2.5; // sleep before the welcome message starts (in seconds)
 

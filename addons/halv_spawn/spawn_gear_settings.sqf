@@ -2,6 +2,8 @@
 	spawn dialog misc settings
 	By Halv
 	
+	Copyright (C) 2015  Halvhjearne > README.md
+	
 	General Note:
 	I attempted to lock DLC items for players that does not have marksman cannot choose DLC items,
 	but ...

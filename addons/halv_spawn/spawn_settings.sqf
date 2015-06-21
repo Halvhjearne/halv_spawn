@@ -43,3 +43,11 @@ _removedefault = true;
 
 //if true, it will always adds a map to the player on spawn (else player will not have a map, if not added to list)
 _addmap = true;
+
+//////////////////////////paintshop settings//////////////////////////
+//if you do not have the paintshop on your server, just set it to false below
+//if true adds paintshop colours on spawn, if below var is set correct as in your paintshop settings
+_addcolours = true;
+//set this the same as you have in your paintshop settings or it will not work
+_servername = "HalvServer";
+//////////////////////////paintshop settings//////////////////////////

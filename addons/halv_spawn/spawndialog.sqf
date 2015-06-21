@@ -13,7 +13,7 @@ _rspawnw = getMarkerPos "respawn_west";
 waitUntil{!isNil "Epoch_my_GroupUID"};
 
 //exit if player is not near a spawn
-if(player distance _rspawnw > 35)exitWith{Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;HALV_fnc_halo = nil;diag_log "Spawn Menu Aborted...";};
+if(player distance _rspawnw > 35)exitWith{Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;HALV_fnc_halo = nil;HALV_playeraddcolours = nil;diag_log "Spawn Menu Aborted...";};
 waitUntil {!dialog};
 
 _diagTiackTime = diag_tickTime;
@@ -146,6 +146,8 @@ HALV_fnc_halo = {
 	}else{
 		_chute = createVehicle ["Steerable_Parachute_F", _pos, [], 0, "CAN_COLLIDE"];
 	};
+	
+	sleep 0.2;
 
 	_chute setDir getDir player;
 	_chute setPosATL _pos;
@@ -161,6 +163,47 @@ HALV_fnc_halo = {
 		if (vehicle player == _chute) then { moveOut player };
 		sleep 1.5;
 		deleteVehicle _chute;
+	};
+};
+
+HALV_playeraddcolours = {
+	_pname = format["%1_BAGCOLOR",_this];
+	_pcolor = profileNamespace getVariable [_pname,[]];
+	if (!(_pcolor isEqualTo []) && !(Backpack player in ["","B_Parachute","B_O_Parachute_02_F","B_I_Parachute_02_F","B_B_Parachute_02_F"]))then{
+		_bag = (unitBackpack player);
+		if(count(getObjectTextures _bag) > 0)then{
+			_defaultsides = [];
+			{
+				if(_x != "")then{
+					_defaultsides pushBack [_forEachIndex,_x];
+				};
+			}forEach getObjectTextures _bag;
+			{_bag setObjectTextureGlobal _x;}forEach _pcolor;
+			_bag setVariable ["HALV_DEFAULTTEX",_defaultsides,true];
+		}else{
+			_txt = (gettext (configFile >> "cfgvehicles" >> (Backpack player) >> "displayName"));
+			systemChat format["%1 could not be painted ...",_txt];
+			diag_log format["%1 could not be painted ...",Backpack player];
+		};
+	};
+
+	_pname = format["%1_UNIFORMCOLOR",_this];
+	_pcolor = profileNamespace getVariable [_pname,[]];
+	if (!(_pcolor isEqualTo []) && !(Uniform player in ["","U_Test1_uniform","U_Test_uniform"]))then{
+		if(count(getObjectTextures player) > 0)then{
+			_defaultsides = [];
+			{
+				if(_x != "")then{
+					_defaultsides pushBack [_forEachIndex,_x];
+				};
+			}forEach getObjectTextures player;
+			{player setObjectTextureGlobal _x;}forEach _pcolor;
+			player setVariable ["HALV_DEFAULTTEX",_defaultsides,true];
+		}else{
+			_txt = (gettext (configFile >> "cfgvehicles" >> (Uniform player) >> "displayName"));
+			systemChat format["%1 could not be painted ...",_txt];
+			diag_log format["%1 could not be painted ...",Uniform player];
+		};
 	};
 };
 
@@ -369,7 +412,8 @@ Halv_spawn_player = {
 		titleText[format[localize "STR_HALV_SPAWNEDNEAR",_cityname,name player],"PLAIN DOWN"];
 	};
 	if(_script != "")then{execVM _script;};
-	Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;HALV_fnc_halo = nil;
+	if(_addcolours)then{_servername call HALV_playeraddcolours;};
+	Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;HALV_fnc_halo = nil;HALV_playeraddcolours = nil;
 };
 
 HALV_switch_spawngear = {

@@ -65,7 +65,7 @@ if(isServer)then{
 	{_deftelepos pushBack (_x select 3)}forEach _HALV_deftele;
 	diag_log format["[halv_spawn] waiting for default 'Debug_static_F' to be build in %1 @ (%2) %3",worldName,mapGridPosition _respawnwest,_respawnwest];
 	waitUntil {sleep 1;(count(_respawnwest nearObjects ["Debug_static_F",30]) > 0)};
-	if(count _HALV_deftele > 0)then{waitUntil {sleep 1;(count(_respawnwest nearObjects ["Transport_EPOCH", 35]) == count _HALV_deftele)};};
+	if(count _HALV_deftele > 0)then{waitUntil {sleep 1;((count(_respawnwest nearObjects ["Transport_EPOCH", 35])) isEqualTo (count _HALV_deftele))};};
 	_objects = _respawnwest nearObjects ["Transport_EPOCH", 35];
 	_box = nearestObject [_respawnwest, "Debug_static_F"];
 	_teleobjs = [];
@@ -84,7 +84,7 @@ if(isServer)then{
 					default{_obj setDir _dir;};
 				};
 				_obj setPosATL _pos;
-				if(_objecttexture != "")then{{_obj setObjectTextureGlobal [_x,_objecttexture];}forEach _objecttexturesides;};
+				if !(_objecttexture isEqualTo "")then{{_obj setObjectTextureGlobal [_x,_objecttexture];}forEach _objecttexturesides;};
 				_teleobjs pushBack _obj;
 			}else{
 				_teleobjs pushBack _x;
@@ -99,7 +99,7 @@ if(isServer)then{
 			_obj = createVehicle [_newteleClass,_rpos,[], 0, "CAN_COLLIDE"];
 			_obj setDir _rDir;
 			_obj setPos _rpos;
-			if(_objecttexture != "")then{{_obj setObjectTextureGlobal [_x,_objecttexture];}forEach _objecttexturesides;};
+			if !(_objecttexture isEqualTo "")then{{_obj setObjectTextureGlobal [_x,_objecttexture];}forEach _objecttexturesides;};
 			_teleobjs pushBack _obj;
 		}forEach[[[-0.337891,8.4668,-10.3362],0],[[14.6621,0.367188,-10.3362],90],[[-15.4375,0.166016,-10.3362],270]];
 	};

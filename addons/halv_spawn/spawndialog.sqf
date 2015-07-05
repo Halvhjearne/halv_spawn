@@ -6,14 +6,18 @@
 */
 
 #include "spawn_gear_settings.sqf";
-
-if(isServer)exitWith{};
+_scriptpath = _this select 0;
 _rspawnw = getMarkerPos "respawn_west";
+HALV_Center = getMarkerPos "center";
 // Makes the script start when player is ingame
+waitUntil{!isNil "HALV_senddeftele"};
 waitUntil{!isNil "Epoch_my_GroupUID"};
 
 //exit if player is not near a spawn
 if(player distance _rspawnw > 35)exitWith{Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;HALV_fnc_halo = nil;HALV_playeraddcolours = nil;diag_log "Spawn Menu Aborted...";};
+diag_log format["[halv_spawn] waiting for new teleports to be build in %1 ...",worldName];
+{_x addAction ["<img size='1.5'image='\a3\Ui_f\data\IGUI\Cfg\Actions\ico_cpt_start_on_ca.paa'/> <t color='#0096ff'>Select</t><t > </t><t color='#00CC00'>Spawn</t>",(_scriptpath+"opendialog.sqf"),_x, -9, true, true, "", "player distance _target < 5"];}forEach (HALV_senddeftele select 0);
+diag_log format["[halv_spawn] addAction added to %1",HALV_senddeftele];
 waitUntil {!dialog};
 
 _diagTiackTime = diag_tickTime;
@@ -124,15 +128,18 @@ HALV_addiweaponwithammo = {
 };
 
 HALV_fnc_halo = {
+	waitUntil{animationState player == "halofreefall_non"};
 	sleep 1;
+	HALV_openchute = false;
 	_action = player addAction [localize "STR_HALO_OPEN_CHUTE",{HALV_openchute = true;}];
 
-	waitUntil{sleep 1;(!isNil "HALV_openchute" || !alive player || isTouchingGround player)};
+	waitUntil{sleep 1;(HALV_openchute || !(alive player) || isTouchingGround player)};
 
 	player removeAction _action;
 
-	if(isNil "HALV_openchute")then{
+	if !(HALV_openchute)then{
 		player setDammage 1;
+		HALV_openchute = nil;
 	}else{
 		HALV_openchute = nil;
 	};
@@ -146,7 +153,7 @@ HALV_fnc_halo = {
 	}else{
 		_chute = createVehicle ["Steerable_Parachute_F", _pos, [], 0, "CAN_COLLIDE"];
 	};
-	
+
 	sleep 0.2;
 
 	_chute setDir getDir player;
@@ -154,6 +161,10 @@ HALV_fnc_halo = {
 	_chute disableCollisionWith player;
 	player moveInDriver _chute;
 	_chute setVelocity [0,0,0];
+	waitUntil{vehicle player isEqualTo _chute};
+	if (animationState player != "para_pilot") then{
+		player switchMove "para_pilot";
+	};
 
 	waitUntil {isTouchingGround player || !alive player};
 
@@ -582,7 +593,7 @@ Halv_ontreeselected = {
 	_item = '';
 	_row = (_path select 0);
 	_arr = _geararr select _row;
-	if((typeName (_arr select 0)) isEqualTo (typeName []))then{
+	if((typeName (_arr select 0)) isEqualTo "ARRAY")then{
 		_sel = if(_row isEqualTo 7 && ((typeOf player) isEqualTo "Epoch_Female_F"))then{1}else{0};
 		_item = (_arr select _sel)select _val;
 	}else{
@@ -626,7 +637,7 @@ Halv_ontreedoubleclick = {
 		_treectrl tvDelete _path;
 	};
 	_arr = _geararr select _row;
-	if((typeName (_arr select 0)) isEqualTo (typeName []))then{
+	if((typeName (_arr select 0)) isEqualTo "ARRAY")then{
 		_item = (_arr select 0)select _value;
 		_max = (_arr select 1);
 		if(_row isEqualTo 7)then{
@@ -713,7 +724,7 @@ HALV_fill_gear = {
 		_ctrl tvAdd [[],_txt];
 		_ctrl tvSetPicture [[_row],_pic];
 		_arr = _x;
-		if((typeName (_x select 0)) isEqualTo (typeName []))then{
+		if((typeName (_x select 0)) isEqualTo "ARRAY")then{
 			_arr = _x select 0;
 			if(_row isEqualTo 7 && ((typeOf player) isEqualTo "Epoch_Female_F"))then{
 				_arr = (_x select 1);

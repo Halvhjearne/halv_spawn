@@ -65,10 +65,12 @@
 			<Key ID="STR_HALV_PRESSSELECT_HALO_OR_GROUND">
 				<Original>Click to Switch between HALO or Ground Spawn</Original>
 				<English>Click to Switch between HALO or Ground Spawn</English>
+				<Czech>Klikni pro prepnuti mezi Halo Jumpem nebo zrozeni na Zemi</Czech>
 			</Key>
 			<Key ID="STR_HALV_SELECT_GEAR_OR_SPAWN">
 				<Original>Click to Switch between Gear and Spawn Selection</Original>
 				<English>Click to Switch between Gear and Spawn Selection</English>
+				<Czech>Klikni pro prepnuti Vyberu Vybaveni nebo Zrozeni</Czech>
 			</Key>
 			<Key ID="STR_HALV_SELECT_GEAR">
 				<Original>Select Gear</Original>
@@ -85,6 +87,7 @@
 			<Key ID="STR_HALV_NONEEDTOSELECTALL">
 				<Original>You do not need to pick every piece of gear, just select a few and press Select spawn ... you will get random of remaining items</Original>
 				<English>You do not need to pick every piece of gear, just select a few and press Select spawn ... you will get random of remaining items</English>
+				<Czech>Nemusite si vybrat vsechno vybavení, vyberte jen par veci ktere chcete ... zbytek dostanete náhodne</Czech>
 			</Key>
 			<Key ID="STR_HALV_HALO">
 				<Original>HALO Spawn</Original>
@@ -317,7 +320,7 @@
 			<Key ID="STR_HALV_NEEDTOBEDONER">
 				<Original>You need to be a donor to spawn here ...</Original>
 				<English>You need to be a donor to spawn here ...</English>
-				<Czech>Musíte být Dárce, aby se zrodili zde ...</Czech>
+				<Czech>Musíte být Dárce, aby jste se zrodili zde ...</Czech>
 				<French>Vous devez être un donneur pour frayer ici ...</French>
 				<German>Du musst ein Donator sein um hier zu spawnen</German>
 				<Italian>Devi essere un donatore per deporre le uova qui ...</Italian>
@@ -329,7 +332,7 @@
 			<Key ID="STR_HALV_NEEDTOBEREG">
 				<Original>You need to be a registered user to spawn here ...</Original>
 				<English>You need to be a registered user to spawn here ...</English>
-				<Czech>Musíte být registrovaným uživatelem, aby se zrodili zde ...</Czech>
+				<Czech>Musíte být registrovaným uživatelem, aby jste se zrodili zde ...</Czech>
 				<French>Vous devez être un utilisateur enregistré pour frayer ici ...</French>
 				<German>Du musst registriert sein um hier zu spawnen</German>
 				<Italian>Devi essere un utente registrato per deporre le uova qui ...</Italian>
@@ -462,6 +465,7 @@
 			<Key ID="STR_HALV_LASTUSED">
 				<Original>Last used Gearset</Original>
 				<English>Last used Gearset</English>
+				<Czech>Poslední Pouzite Vybaveni</Czech>
 			</Key>
 		</Container>
 	</Package>
@@ -474,6 +478,7 @@
 			<Key ID="STR_HS_BUY_MODE">
 				<Original>Buy Mode</Original>
 				<English>Buy Mode</English>
+				<Czech>Nakup</Czech>
 				<French>le mode d'achat</French>
 				<German>Kaufen</German>
 				<Russian>Режим покупки</Russian>
@@ -482,6 +487,7 @@
 			<Key ID="STR_HS_SELL_MODE">
 				<Original>Sell Mode</Original>
 				<English>Sell Mode</English>
+				<Czech>Prodej</Czech>
 				<French>Mode Vendre</French>
 				<German>Verkaufen</German>
 				<Russian>Режим продажи</Russian>
@@ -490,6 +496,7 @@
 			<Key ID="STR_HS_CLICK_TOSWITCH">
 				<Original>Click to Switch Between Buy / Sell Mode</Original>
 				<English>Click to Switch Between Buy / Sell Mode</English>
+				<Czech>Kliknutim prepnete mezi Nakupem / Prodejem</Czech>
 				<French>Cliquez pour basculer entre le mode Achat / Vente</French>
 				<German>Klick um zwischen Kaufen / Verkaufen zu wechseln</German>
 				<Russian>Кликните для переключения режима торговли.</Russian>
@@ -506,6 +513,7 @@
 			<Key ID="STR_HS_CONFIRMTRADE">
 				<Original>Confirm Trade</Original>
 				<English>Confirm Trade</English>
+				<Czech>Potvrdit Obchod</Czech>
 				<French>Confirmez le commerce</French>
 				<German>Handel bestätigen</German>
 				<Russian>Подтвердить покупку</Russian>
@@ -514,6 +522,7 @@
 			<Key ID="STR_HS_CLICKTOCONFIRMTRADE">
 				<Original>Click to Confirm Current Trade</Original>
 				<English>Click to Confirm Current Trade</English>	
+				<Czech>Kliknutim Potvrdite Obchod</Czech>
 				<French>Cliquez sur pour confirmer l'achat</French>
 				<German>Klicke um den kauf zu bestätigen</German>
 				<Russian>Кликните для подтверждения покупки</Russian>
@@ -522,6 +531,7 @@
 			<Key ID="STR_HS_SELECTHALFORFULLTEXT">
 				<Original>Select 1/2 Price Rent-a-car or Buy Full Price Vehicle:</Original>
 				<English>Select 1/2 Price Rent-a-car or Buy Full Price Vehicle:</English>
+				<Czech>Muzete si Pronajmout Vozidlo za 1/2 ceny, nebo koupit za Plnou Cenu</Czech>
 				<French>Sélectionnez Moitié prix temporaire ou Full Prix Véhicule:</French>
 				<German>1/2 Preis,Fahrzeug speichert nicht oder voller Preis,Fahrzeug speichert:</German>
 				<Spanish>Seleccione mitad de precio temporal o completa Precio Vehículo Guardados:</Spanish>
@@ -529,6 +539,7 @@
 			<Key ID="STR_HS_BUYFULLPRICE">
 				<Original>Buy Full Price Saved Vehicle</Original>
 				<English>Buy Full Price Saved Vehicle</English>
+				<Czech>Koupit Za Plnou Cenu</Czech>
 				<French>Acheter un véhicule qui est stocké</French>
 				<German>Voller Preis, Fahrzeug speichert</German>
 				<Spanish>Comprar un vehículo que se almacena</Spanish>
@@ -536,16 +547,19 @@
 			<Key ID="STR_HS_BUYHALFPRICE">
 				<Original>Rent 1/2 Price Temp Vehicle</Original>
 				<English>Rent 1/2 Price Temp Vehicle</English>
+				<Czech>Pronajmout za 1/2 Ceny</Czech>
 				<German>Miete ein 1/2 Preis Temp Fahrzeug</German>
 			</Key>
 			<Key ID="STR_HS_PRESSTOBUYHALFPRICE">
 				<Original>Press to Rent 1/2 Price Vehicle Until next restart</Original>
 				<English>Press to Rent 1/2 Price Vehicle Until next restart</English>
+				<Czech>Kliknete pro pronajmuti vozidla za 1/2 ceny do Restartu</Czech>
 				<German>Drücke um ein 1/2 Fahrzeug zu Mieten(nur bis zum restart)</German>
 			</Key>
 			<Key ID="STR_HS_BUYCHECK">
 				<Original>Check Availability</Original>
 				<English>Check Availability</English>
+				<Czech>Zkontrolovat dostupnost</Czech>
 				<French>Vérifier la disponibilité</French>
 				<German>Verfuegbarkeit überprüfen</German>
 				<Russian>Проверить наличие</Russian>
@@ -554,6 +568,7 @@
 			<Key ID="STR_HS_PRESSTOCHECK">
 				<Original>Press to Check if you can buy a saved vehicle</Original>
 				<English>Press to Check if you can buy a saved vehicle</English>
+				<Czech>Kliknete pro overeni Zda je mozne koupit Ulozene Vozidlo</Czech>
 				<French>Appuyez sur pour vérifier la limite du monde du véhicule</French>
 				<German>Fahrzeugworldlimit überprüfen</German>
 				<Spanish>Pulse para comprobar límite mundial de vehículos</Spanish>
@@ -562,206 +577,242 @@
 			<Key ID="STR_HS_ASSAULTRIFLES">
 				<Original>Assault Rifles</Original>
 				<English>Assault Rifles</English>
+				<Czech>Utocne Pusky</Czech>
 				<German>Sturmgewehre</German>
 				<Russian>Автоматические винтовки</Russian>
 			</Key>
 			<Key ID="STR_HS_HANDGUNS">
 				<Original>Hand Guns</Original>
 				<English>Hand Guns</English>
+				<Czech>Pistole</Czech>
 				<German>Pistolen</German>
 				<Russian>Пистолет/Ручное</Russian>
 			</Key>
 			<Key ID="STR_HS_MACHINEGUNS">
 				<Original>Machine Guns</Original>
 				<English>Machine Guns</English>
+				<Czech>Kulomety</Czech>
 				<German>Maschinengewehre</German>
 				<Russian>Пулемёт</Russian>
 			</Key>
 			<Key ID="STR_HS_SNIPERRIFLES">
 				<Original>Sniper Rifles</Original>
 				<English>Sniper Rifles</English>
+				<Czech>Ostrelovaci Pusky</Czech>
 				<German>Scharfschützengewehre</German>
 				<Russian>Снайперские винтовки</Russian>
 			</Key>
 			<Key ID="STR_HS_SUBMACHINEGUNS">
 				<Original>Submachine Guns</Original>
 				<English>Submachine Guns</English>
+				<Czech>Samopaly</Czech>
 				<Russian>Пистолет-пулеметы</Russian>
 			</Key>
 			<Key ID="STR_HS_LAUNCHERS">
 				<Original>Launchers</Original>
 				<English>Launchers</English>
+				<Czech>Odpalovace</Czech>
 				<German>Raketenwerfer</German>
 			</Key>
 			<Key ID="STR_HS_OTHER">
 				<Original>Other</Original>
 				<English>Other</English>
+				<Czech>Jine</Czech>
 				<German>Anderes</German>
 				<Russian>Всякое</Russian>
 			</Key>
 			<Key ID="STR_HS_AMMOBULLETS">
 				<Original>Ammo / Bullets</Original>
 				<English>Ammo / Bullets</English>
+				<Czech>Munice</Czech>
 				<German>Munition</German>
 				<Russian>Боезапас / Патроны</Russian>
 			</Key>
 			<Key ID="STR_HS_AMMOROCKETS">
 				<Original>Rockets / Missiles</Original>
 				<English>Rockets / Missiles</English>
+				<Czech>Rakety</Czech>
 				<German>Raketen</German>
 			</Key>
 			<Key ID="STR_HS_BUILDINGSUPP">
 				<Original>Building Supplies</Original>
 				<English>Building Supplies</English>
+				<Czech>Stavebni Material</Czech>
 				<German>Bau Material</German>
 				<Russian>Стройматериалы</Russian>
 			</Key>
 			<Key ID="STR_HS_FOOD">
 				<Original>Food</Original>
 				<English>Food</English>
+				<Czech>Jidlo</Czech>
 				<German>Essen</German>
 			</Key>
 			<Key ID="STR_HS_BIPODS">
 				<Original>Bipods</Original>
 				<English>Bipods</English>
+				<Czech>Dvojnozka</Czech>
 				<Russian>Сошки</Russian>
 			</Key>
 			<Key ID="STR_HS_MUZZLES">
 				<Original>Muzzles</Original>
 				<English>Muzzles</English>
+				<Czech>Ustove nasady</Czech>
 				<German>Aufsätze</German>
 				<Russian>Глушители</Russian>
 			</Key>
 			<Key ID="STR_HS_OPTICS">
 				<Original>Optics</Original>
 				<English>Optics</English>
+				<Czech>Optiky</Czech>
 				<German>Visiere</German>
 				<Russian>Оптика</Russian>
 			</Key>
 			<Key ID="STR_HS_POINTERS">
 				<Original>Pointers</Original>
 				<English>Pointers</English>
+				<Czech>Svitilny / Laser</Czech>
 				<German>Laserdesignator</German>
 				<Russian>Целеуказатели</Russian>
 			</Key>
 			<Key ID="STR_HS_SMOKES">
 				<Original>Smoke Grenades</Original>
 				<English>Smoke Grenades</English>
+				<Czech>Kourove Granaty</Czech>
 				<German>Rauch Granaten</German>
 				<Russian>Дымовые гранаты</Russian>
 			</Key>
 			<Key ID="STR_HS_FLARES">
 				<Original>Flares</Original>
 				<English>Flares</English>
+				<Czech>Svetlice</Czech>
 				<Russian>Сигнальные ракеты</Russian>
 			</Key>
 			<Key ID="STR_HS_GRENADES">
 				<Original>Grenades</Original>
 				<English>Grenades</English>
+				<Czech>Granaty</Czech>
 				<German>Granaten</German>
 				<Russian>Гранаты</Russian>
 			</Key>
 			<Key ID="STR_HS_MINES">
 				<Original>Mines</Original>
 				<English>Mines</English>
+				<Czech>Miny</Czech>
 				<German>Minen</German>
 				<Russian>Мины</Russian>
 			</Key>
 			<Key ID="STR_HS_PLANES">
 				<Original>Planes</Original>
 				<English>Planes</English>
+				<Czech>Letadla</Czech>
 				<German>Flugzeuge</German>
 				<Russian>Самолёты</Russian>
 			</Key>
 			<Key ID="STR_HS_HELICOPTERS">
 				<Original>Helicopters</Original>
 				<English>Helicopters</English>
+				<Czech>Vrtulniky</Czech>
 				<German>Helicopter</German>
 				<Russian>Вертолёты</Russian>
 			</Key>
 			<Key ID="STR_HS_CARS">
 				<Original>Cars</Original>
 				<English>Cars</English>
+				<Czech>Auta</Czech>
 				<German>Autos</German>
 				<Russian>Авто</Russian>
 			</Key>
 			<Key ID="STR_HS_GOKARTS">
 				<Original>GoKarts</Original>
 				<English>GoKarts</English>
+				<Czech>Motokary</Czech>
 				<Russian>Карт</Russian>
 			</Key>
 			<Key ID="STR_HS_TRUCKS">
 				<Original>Trucks</Original>
 				<English>Trucks</English>
+				<Czech>Nakladaky</Czech>
 				<Russian>Грузовики</Russian>
 			</Key>
 			<Key ID="STR_HS_APCS">
 				<Original>APC's</Original>
 				<English>APC's</English>
+				<Czech>Obrneny Transporter</Czech>
 				<Russian>Бронированные</Russian>
 			</Key>
 			<Key ID="STR_HS_TANKS">
 				<Original>Tanks / Tracked</Original>
 				<English>Tanks / Tracked</English>
+				<Czech>Tanky / Pasove</Czech>
 				<German>Panzer</German>
 				<Russian>Танки / Гусеничное</Russian>
 			</Key>
 			<Key ID="STR_HS_AIR">
 				<Original>Air</Original>
 				<English>Air</English>
+				<Czech>Letadla</Czech>
 				<German>Luft</German>
 				<Russian>Воздух</Russian>
 			</Key>
 			<Key ID="STR_HS_LAND">
 				<Original>Land</Original>
 				<English>Land</English>
+				<Czech>Pozemni Vozidla</Czech>
 				<Russian>Земля</Russian>
 			</Key>
 			<Key ID="STR_HS_SEA">
 				<Original>Sea</Original>
 				<English>Sea</English>
+				<Czech>Lode</Czech>
 				<German>Wasser</German>
 				<Russian>Вода</Russian>
 			</Key>
 			<Key ID="STR_HS_WEAPONS">
 				<Original>Weapons</Original>
 				<English>Weapons</English>
+				<Czech>Zbrane</Czech>
 				<German>Waffen</German>
 				<Russian>Оружие</Russian>
 			</Key>
 			<Key ID="STR_HS_MAGAZINEITEMS">
 				<Original>Magazine Items</Original>
 				<English>Magazine Items</English>
+				<Czech>Zasobniky / Veci</Czech>
 				<German>Magazine</German>
 				<Russian>Предметы инвентаря</Russian>
 			</Key>
 			<Key ID="STR_HS_ATTACHMENTSTOOLS">
 				<Original>Attachments and Tool Items</Original>
 				<English>Attachments and Tool Items</English>
+				<Czech>Prislusenstvi a Nastroje</Czech>
 				<German>Aufsätze und Werkzeuge</German>
 				<Russian>Навесное и инструменты</Russian>
 			</Key>
 			<Key ID="STR_HS_EQUIPCLOTHING">
 				<Original>Equipment / Clothing</Original>
 				<English>Equipment / Clothing</English>
+				<Czech>Vybaveni / Obleceni</Czech>
 				<German>Equipment / Klamotten</German>
 				<Russian>Обмундирование / Одежда</Russian>
 			</Key>
 			<Key ID="STR_HS_EXPLOSMOKEFLARE">
 				<Original>Explosives, Smoke and Flare</Original>
 				<English>Explosives, Smoke and Flare</English>
+				<Czech>Vybusniny, Dymovnice a Svetlice</Czech>
 				<German>Sprengstoff, Smoke und Flares</German>
 				<Russian>Взрывчатка, дым и сигнал</Russian>
 			</Key>
 			<Key ID="STR_HS_VEHICLES">
 				<Original>Vehicles</Original>
 				<English>Vehicles</English>
+				<Czech>Vozidla</Czech>
 				<German>Fahrzeuge</German>
 				<Russian>Техника</Russian>
 			</Key>
 			<Key ID="STR_HS_DOUBLECLICKTOADD">
 				<Original>Double click an item to add it to the buy / sell list, switch between buy and sell mode by pressing the Buy / Sell Mode button</Original>
 				<English>Double click an item to add it to the buy / sell list, switch between buy and sell mode by pressing the Buy / Sell Mode button</English>
+				<Czech>Dvoj Klikem pridate predmet k Napupu / Prodeji, prepnout mezi nakupem a prodejem muzete kliknutim na Nakup / Prodej tlacitko</Czech>
 				<French>Double-cliquez sur un objet pour l'ajouter dans la liste, changer entre l'achat / vente en appuyant sur le bouton d'achat</French>
 				<German>Doppelklick auf einen Gegenstand um diesen in der Liste zuzufügen, wechsel zwischen Kauf / Verkauf indem du den Kauf Knopf drückst</German>
 				<Russian>Дважды кликните по предмету для добавления его в список покупки/продажи. Переключиться между покупкой и продажой можно нажатием кнопки Покупка/Продажа</Russian>
@@ -770,15 +821,18 @@
 			<Key ID="STR_HS_PRICE">
 				<Original>Price: %1</Original>
 				<English>Price: %1</English>
-				<Russian>Покупка: %1 - Продажа: %2%3</Russian>
+				<Czech>Cena: %1</Czech>
+				<Russian>Покупка: %1</Russian>
 			</Key>
 			<Key ID="STR_HS_PRICETAX">
 				<Original>Price: %1 - Tax: %2%3 - ServerTax: %4%3</Original>
 				<English>Price: %1 - Tax: %2%3 - ServerTax: %4%3</English>
+				<Czech>Cena: %1 - Poplatek: %2%3 - PoplatekServeru: %4%3</Czech>
 			</Key>
 			<Key ID="STR_HS_UNIFORMNOTSOLD">
 				<Original>Your Uniform was not empty ... not sold</Original>
 				<English>Your Uniform was not empty ... not sold</English>
+				<Czech>Vase Uniforma Neni prazdna ... neprodano</Czech>
 				<French>Votre Uniform était pas vide ... pas vendu</French>
 				<German>Deine Uniform ist nicht leer ... wurde nicht verkauft</German>
 				<Russian>Твоя одежда не пуста... нельзя продать</Russian>
@@ -787,6 +841,7 @@
 			<Key ID="STR_HS_VESTNOTSOLD">
 				<Original>Your Vest was not empty ... not sold</Original>
 				<English>Your Vest was not empty ... not sold</English>
+				<Czech>Vase Vesta neni prazdna ... neprodano</Czech>
 				<French>Votre Vest était pas vide ... pas vendu</French>
 				<German>Deine Weste ist nicht leer ... wurde nicht verkauft</German>
 				<Russian>Твоя разгрузка не пуста... нельзя продать</Russian>
@@ -795,6 +850,7 @@
 			<Key ID="STR_HS_BACKPACKNOTSOLD">
 				<Original>Your Backpack was not empty ... not sold</Original>
 				<English>Your Backpack was not empty ... not sold</English>
+				<Czech>Vas Batoh Neni Prazdny ... neprodano</Czech>
 				<French>Votre sac à dos était pas vide ... pas vendu</French>
 				<German>Dein Rucksack ist nicht leer ... wurde nicht verkauft</German>
 				<Russian>Твой рюкзак не пустой... нельзя продать</Russian>
@@ -803,6 +859,7 @@
 			<Key ID="STR_HS_FAILEDTOSELL">
 				<Original>Failed to sell %1 ... not empty!</Original>
 				<English>Failed to sell %1 ... not empty!</English>
+				<Czech>Nemozno Prodat %1 ... neni Prazdne</Czech>
 				<French>Impossible de vendre %1 ... pas vide!</French>
 				<German>Verkauf fehlgeschlagen %1 ... nicht leer</German>
 				<Russian>Не удалось продать %1... не пустой!</Russian>
@@ -811,6 +868,7 @@
 			<Key ID="STR_HS_ALREADYHAVEWEAPON">
 				<Original>You already have a Weapon in the hand ...</Original>
 				<English>You already have a Weapon in the hand ...</English>
+				<Czech>Uz mate Zbran v Ruce</Czech>
 				<French>Vous avez déjà une arme dans la main ...</French>
 				<German>Sie haben bereits eine Waffe in der Hand ...</German>
 				<Russian>У тебя уже есть оружие в руке!</Russian>
@@ -819,6 +877,7 @@
 			<Key ID="STR_HS_ALREADYWEARINGBAG">
 				<Original>You are already wearing a Backpack</Original>
 				<English>You are already wearing a Backpack</English>
+				<Czech>Uz mate Batoh</Czech>
 				<French>Vous êtes déjà vêtu d'une Backpack</French>
 				<German>Du trägst bereits einen Rucksack</German>
 				<Russian>Рюкзак уже одет!</Russian>
@@ -827,6 +886,7 @@
 			<Key ID="STR_HS_ALREADYWEARINGGLASSES">
 				<Original>You are already Wearing Glasses</Original>
 				<English>You are already Wearing Glasses</English>
+				<Czech>Uz mate Bryle</Czech>
 				<French>Vous êtes déjà vêtu d'une Glasses</French>
 				<German>Du trägst bereits eine Brille</German>
 				<Russian>Очки уже одеты...</Russian>
@@ -835,6 +895,7 @@
 			<Key ID="STR_HS_ALREADYWEARINGHEADGEAR">
 				<Original>You are already Wearing Headgear</Original>
 				<English>You are already Wearing Headgear</English>
+				<Czech>Uz mate Pokryvku Hlavy</Czech>
 				<French>Vous êtes déjà vêtu d'une Headgear</French>
 				<German>Du trägst bereits Headgear</German>
 				<Russian>Головной убор уже одет...</Russian>
@@ -843,6 +904,7 @@
 			<Key ID="STR_HS_ALREADYWEARINGUNIFORM">
 				<Original>You are already Wearing a Uniform</Original>
 				<English>You are already Wearing a Uniform</English>
+				<Czech>Uz Mate Uniformu</Czech>
 				<French>Vous êtes déjà vêtu d'une uniform</French>
 				<German>Du trägst bereits eine Uniform</German>
 				<Russian>Форма уже одета</Russian>
@@ -851,6 +913,7 @@
 			<Key ID="STR_HS_ALREADYWEARINGVEST">
 				<Original>You are already Wearing a vest</Original>
 				<English>You are already Wearing a vest</English>
+				<Czech>Uz mate Vestu</Czech>
 				<French>Vous êtes déjà vêtu d'une veste</French>
 				<German>Du trägst bereits eine Veste</German>
 				<Russian>Разгрузка уже одета</Russian>
@@ -859,6 +922,7 @@
 			<Key ID="STR_HS_ONGROUNDNEARYOU">
 				<Original>What you could not have in your inventory is on the ground near you ...</Original>
 				<English>What you could not have in your inventory is on the ground near you ...</English>
+				<Czech>Co se neveslo do vaseho inventare lezi na zemi okolo vas ...</Czech>
 				<French>Qu'est-ce que vous ne pourriez pas avoir dans votre inventaire est sur le terrain près de chez vous</French>
 				<German>Item passt nicht ins Iventar, es liegt jetzt auf dem Boden in der nähe</German>
 				<Russian>То что не влезло в инвентарь - валяется где то рядом...</Russian>
@@ -867,6 +931,7 @@
 			<Key ID="STR_HS_NOTENOGHCRYPTO">
 				<Original>You do not have enough Crypto to buy this ...</Original>
 				<English>You do not have enough Crypto to buy this ...</English>
+				<Czech>Nemate Dostatek Crypto pro nakup ...</Czech>
 				<French>Vous ne disposez pas de suffisamment Crypto</French>
 				<German>Du hast nicht genug Crypto</German>
 				<Russian>Нужно больше Крипто... нищеброд.</Russian>
@@ -875,6 +940,7 @@
 			<Key ID="STR_HS_NOTALLOWEDTOSPAM">
 				<Original>Not allowed to spam this button, wait another %1 seconds</Original>
 				<English>Not allowed to spam this button, wait another %1 seconds</English>
+				<Czech>Neni dovoleno Spamovat toto tlacitko, pockejte dalsich %1 sekund</Czech>
 				<French>Non autorisé à spammer ce bouton, attendre une autre %1 secondes</French>
 				<German>Es ist nicht erlaubt den Knopf so oft zu drücken, warte %1 sekunden</German>
 				<Russian>Хватить херачить по кнопке, а если я в тебя так потыкаю ?! Подожди хотя бы %1 секунд...</Russian>
@@ -883,4 +949,3 @@
 		</Container>
 	</Package>
 </Project>
-

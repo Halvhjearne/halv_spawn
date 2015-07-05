@@ -125,11 +125,6 @@ if(isServer)then{
 	diag_log format["[halv_spawn] sendt teleporters and default positions to clients, %1 textures build",_pics];
 };
 
-if(hasInterface)then{
-	HALV_Center = getMarkerPos "center";
-	diag_log format["[halv_spawn] waiting for new teleports to be build in %1 ...",worldName];
-	waitUntil{!isNil "HALV_senddeftele"};//iconjoin_ca
-	{_x addAction ["<img size='1.5'image='\a3\Ui_f\data\IGUI\Cfg\Actions\ico_cpt_start_on_ca.paa'/> <t color='#0096ff'>Select</t><t > </t><t color='#00CC00'>Spawn</t>",(_scriptpath+"opendialog.sqf"),_x, -9, true, true, "", "_this distance _target < 5"];}forEach (HALV_senddeftele select 0);
-	diag_log format["[halv_spawn] addAction added to %1",HALV_senddeftele];
-	[] execVM (_scriptpath+"spawndialog.sqf");
+if(hasInterface && !isDedicated)then{
+	[_scriptpath] execVM (_scriptpath+"spawndialog.sqf");
 };

@@ -6,7 +6,7 @@
 				<Original>Open Chute</Original>
 				<English>Open Chute</English>
 				<Czech>Otevřít Padák</Czech>
-				<French>Ouvrir Chute</French>
+				<French>Ouvrir Parachute</French>
 				<German>Fallschirm öffnen</German>
 				<Italian>Aprire Chute</Italian>
 				<Polish>Otwórz Chute</Polish>
@@ -22,7 +22,7 @@
 				<Original>Please tell me if any translations are wrong and i will correct it</Original>
 				<English>Please tell me if any translations are wrong and i will correct it</English>
 				<Czech>Prosím, řekněte mi, jestli je v překladu něco špatne a já to opravím</Czech>
-				<French>S'il vous plaît me dire si toutes les traductions sont fausses et je vais corriger</French>
+				<French>S'il vous plaît dites moi si toutes les traductions sont exactes et je vais corrigerai le cas échéant</French>
 				<German>Bitte teile es mir mit, wenn irgendwelche Übersetzungen falsch sein sollten, ich werde diese dann korrigieren</German>
 				<Italian>La prego di dirmi se eventuali traduzioni sono sbagliate e io correggerlo</Italian>
 				<Polish>Proszę mi powiedzieć, czy wszystkie tłumaczenia są błędne i będę go poprawić</Polish>
@@ -65,18 +65,20 @@
 			<Key ID="STR_HALV_PRESSSELECT_HALO_OR_GROUND">
 				<Original>Click to Switch between HALO or Ground Spawn</Original>
 				<English>Click to Switch between HALO or Ground Spawn</English>
+				<French>Clickez pour choisir entre le spawn en parachute ou le spawn au sol</French>
 				<Czech>Klikni pro prepnuti mezi Halo Jumpem nebo zrozeni na Zemi</Czech>
 			</Key>
 			<Key ID="STR_HALV_SELECT_GEAR_OR_SPAWN">
 				<Original>Click to Switch between Gear and Spawn Selection</Original>
 				<English>Click to Switch between Gear and Spawn Selection</English>
+				<French>Cliquez pour sélectionner l'équipement ou un lieu de spawn</French>
 				<Czech>Klikni pro prepnuti Vyberu Vybaveni nebo Zrozeni</Czech>
 			</Key>
 			<Key ID="STR_HALV_SELECT_GEAR">
 				<Original>Select Gear</Original>
 				<English>Select Gear</English>
 				<Czech>Vybrat Vybavení</Czech>
-				<French>Sélectionnez vitesse</French>
+				<French>Sélectionnez équipement</French>
 				<German>Wähle Ausrüstung</German>
 				<Italian>Selezionare Gear</Italian>
 				<Polish>Wybierz biegów</Polish>
@@ -87,13 +89,14 @@
 			<Key ID="STR_HALV_NONEEDTOSELECTALL">
 				<Original>You do not need to pick every piece of gear, just select a few and press Select spawn ... you will get random of remaining items</Original>
 				<English>You do not need to pick every piece of gear, just select a few and press Select spawn ... you will get random of remaining items</English>
+				<French>il n'est pas nécessaire de prendre tout l'équipement, selectionnez en quelques uns et choisissez votre lieu de spawn .... vous obtiendrez le reste de façon aléatoire</French>
 				<Czech>Nemusite si vybrat vsechno vybavení, vyberte jen par veci ktere chcete ... zbytek dostanete náhodne</Czech>
 			</Key>
 			<Key ID="STR_HALV_HALO">
 				<Original>HALO Spawn</Original>
 				<English>HALO Spawn</English>
 				<Czech>HALO Zrození</Czech>
-				<French>HALO Spawn</French>
+				<French>Spawn en parachute</French>
 				<German>HALO Spawn</German>
 				<Italian>HALO Spawn</Italian>
 				<Polish>HALO Spawn</Polish>
@@ -105,7 +108,7 @@
 				<Original>HALO Spawn Selected</Original>
 				<English>HALO Spawn Selected</English>
 				<Czech>HALO Zrození Vybráno</Czech>
-				<French>HALO Spawn Sélectionné</French>
+				<French>Spawn en parachute selectionné</French>
 				<German>Luft spawn ausgewählt</German>
 				<Italian>HALO Spawn Selezionato</Italian>
 				<Polish>HALO Spawn Wybrane</Polish>
@@ -117,7 +120,7 @@
 				<Original>Ground Spawn</Original>
 				<English>Ground Spawn</English>
 				<Czech>Zrození na Zemi</Czech>
-				<French>rez-de Spawn</French>
+				<French>Spawn traditionnel</French>
 				<German>Boden Spawn</German>
 				<Italian>Terra Spawn</Italian>
 				<Polish>Parter Spawn</Polish>
@@ -129,7 +132,7 @@
 				<Original>Ground Spawn Selected</Original>
 				<English>Ground Spawn Selected</English>
 				<Czech>Zrození na zemi vybráno</Czech>
-				<French>Rez Spawn Sélectionné</French>
+				<French>Spawn traditionnel selectionné</French>
 				<German>Boden Spawn Ausgewählt</German>
 				<Italian>Terra Spawn Selezionato</Italian>
 				<Polish>Spawn Wybrany ziemi</Polish>
@@ -141,7 +144,7 @@
 				<Original>Near Group</Original>
 				<English>Near Group</English>
 				<Czech>Poblíž skupiny</Czech>
-				<French>Près Groupe</French>
+				<French>Spawn près du groupe</French>
 				<German>In der Nähe von Gruppen</German>
 				<Italian>Vicino Group</Italian>
 				<Polish>Blisko Grupa</Polish>
@@ -153,7 +156,7 @@
 				<Original>Near Jammer</Original>
 				<English>Near Jammer</English>
 				<Czech>Poblíž Jammeru</Czech>
-				<French>près Jammer</French>
+				<French>Près du jammer</French>
 				<German>In der Nähe vom Jammer</German>
 				<Italian>Vicino Jammer</Italian>
 				<Polish>Blisko Jammer</Polish>
@@ -165,7 +168,7 @@
 				<Original>Can't spawn here, you have a body nearby the position ...</Original>
 				<English>Can't spawn here, you have a body nearby the position ...</English>
 				<Czech>Nelze se Spawnut, máte tělo poblíž pozici ...</Czech>
-				<French>Vous ne pouvez pas reproduire ici, vous avez un corps à proximité de la position ...</French>
+				<French>Vous ne pouvez pas spawn ici, vous avez un corps à proximité de la position ...</French>
 				<German>Du kannst hier nicht spawnen, dein Körper liegt in der Nähe ...</German>
 				<Italian>Non può generare qui, avete un corpo vicino alla posizione di ...</Italian>
 				<Polish>Nie może pojawiać się tutaj, masz ciało w pobliżu pozycji ...</Polish>
@@ -177,7 +180,7 @@
 				<Original>Scroll and press mouse wheel to open chute ...</Original>
 				<English>Scroll and press mouse wheel to open chute ...</English>
 				<Czech>Protočte a stiskněte kolečko myši pro otevření padáku ...</Czech>
-				<French>Faites défiler et appuyez sur la roue de la souris pour ouvrir goulotte ...</French>
+				<French>Faites défiler et appuyez sur la roue de la souris pour ouvrir le parachute ...</French>
 				<German>Mausrad nach unten um den fallschirm zu öffnen</German>
 				<Italian>Scorrere e rotella del mouse premere per aprire lo scivolo ...</Italian>
 				<Polish>Przewiń i koło naciśnij myszy, aby otworzyć spadochron ...</Polish>

@@ -192,7 +192,7 @@
 				<Original>HALO Spawned near %1\nGood Luck %2</Original>
 				<English>HALO Spawned near %1\nGood Luck %2</English>
 				<Czech>HALO zrození poblíž %1\nHodně Štěstí %2</Czech>
-				<French>HALO Spawned proximité %1\nBonne Chance %2</French>
+				<French>HALO a spawn a proximité %1\nBonne Chance %2</French>
 				<German>Falschirm spawned bei der Ausrüstung %1\nViel Glück %2</German>
 				<Italian>HALO Generato vicino %1\nBuona Fortuna %2</Italian>
 				<Polish>HALO Spawned pobliżu %1\nPowodzenia %2</Polish>
@@ -204,7 +204,7 @@
 				<Original>Spawned near %1\nGood Luck %2</Original>
 				<English>Spawned near %1\nGood Luck %2</English>
 				<Czech>Zrození poblíž %1\nHodně Štěstí %2</Czech>
-				<French>Spawned proximité %1\nBonne Chance %2</French>
+				<French>a spawn a proximité %1\nBonne Chance %2</French>
 				<German>Spawned bei der Ausrüstung %1\nViel Glück %2</German>
 				<Italian>Generato vicino %1\nBuona Fortuna %2</Italian>
 				<Polish>Spawned pobliżu %1\nPowodzenia %2</Polish>
@@ -240,7 +240,7 @@
 				<Original>Registered / Donors only ...</Original>
 				<English>Registered / Donors only ...</English>
 				<Czech>Pouze Registrovaní / Dárci ...</Czech>
-				<French>Enregistrés / Bailleurs de Fonds ...</French>
+				<French>Joueurs enregistrés ou donateurs seulement ...</French>
 				<German>Nur Donatoren / Spender ...</German>
 				<Italian>Solo gli utenti registrati / donatori ...</Italian>
 				<Polish>Tylko dla darczyńców/zarejestrowanych ...</Polish>
@@ -276,7 +276,7 @@
 				<Original>Locked, Body Nearby ...</Original>
 				<English>Locked, Body Nearby ...</English>
 				<Czech>Zamčeno, tělo poblíž ...</Czech>
-				<French>Verrouillé, Body proximité ...</French>
+				<French>Verrouillé, corps a proximité ...</French>
 				<German>Gesperrt, Leiche in der nähe ...</German>
 				<Italian>Bloccato, corpo nelle vicinanze ...</Italian>
 				<Polish>Zamknięty, ciało w pobliżu ...</Polish>
@@ -288,7 +288,7 @@
 				<Original>Double Click, to Spawn Near Jammer</Original>
 				<English>Double Click, to Spawn Near Jammer</English>
 				<Czech>Dvoj klik, aby se zrodily poblíž Jammeru</Czech>
-				<French>Double Click, à Spawn Près Jammer</French>
+				<French>Double Click pour Spawn Près du Jammer</French>
 				<German>Doppel klick um auf dem jammer zu spawnen</German>
 				<Italian>Double Click, per deporre le uova vicino Jammer</Italian>
 				<Polish>Kliknij dwukrotnie, aby pojawić się w pobliżu Jammera</Polish>
@@ -300,7 +300,7 @@
 				<Original>Double Click, to Spawn Near Group Leader.</Original>
 				<English>Double Click, to Spawn Near Group Leader.</English>
 				<Czech>Dvoj klik, aby se zrodili poblíž Velitele Skupiny.</Czech>
-				<French>Double Click, à Spawn Près de chef de groupe.</French>
+				<French>Double Click pour Spawn Près du chef de groupe.</French>
 				<German>Doppel kilck um auf Gruppenanführer zu spawnen</German>
 				<Italian>Double Click, a deporre le uova vicino Capo Gruppo.</Italian>
 				<Polish>Kliknij dwukrotnie, aby pojawić się w pobliżu Przywódcy.</Polish>
@@ -324,7 +324,7 @@
 				<Original>You need to be a donor to spawn here ...</Original>
 				<English>You need to be a donor to spawn here ...</English>
 				<Czech>Musíte být Dárce, aby jste se zrodili zde ...</Czech>
-				<French>Vous devez être un donneur pour frayer ici ...</French>
+				<French>Vous devez être un donateur pour spawn ici ...</French>
 				<German>Du musst ein Donator sein um hier zu spawnen</German>
 				<Italian>Devi essere un donatore per deporre le uova qui ...</Italian>
 				<Polish>Musisz być donatorem aby pojawić się tutaj ...</Polish>
@@ -336,7 +336,7 @@
 				<Original>You need to be a registered user to spawn here ...</Original>
 				<English>You need to be a registered user to spawn here ...</English>
 				<Czech>Musíte být registrovaným uživatelem, aby jste se zrodili zde ...</Czech>
-				<French>Vous devez être un utilisateur enregistré pour frayer ici ...</French>
+				<French>Vous devez être un utilisateur enregistré pour spawn ici ...</French>
 				<German>Du musst registriert sein um hier zu spawnen</German>
 				<Italian>Devi essere un utente registrato per deporre le uova qui ...</Italian>
 				<Polish>Musisz być zarejestrowanym użytkownikiem, aby pojawiać się tutaj ...</Polish>
@@ -397,7 +397,7 @@
 				<Original>Magazines (%1)</Original>
 				<English>Magazines (%1)</English>
 				<Czech>Zásobniky (%1)</Czech>
-				<French>Magazines (%1)</French>
+				<French>Chargeurs (%1)</French>
 				<German>Magazine (%1)</German>
 				<Italian>Riviste (%1)</Italian>
 				<Polish>Czasopisma (%1)</Polish>
@@ -445,7 +445,7 @@
 				<Original>Shades / Goggles</Original>
 				<English>Shades / Goggles</English>
 				<Czech>Sluneční / Ochranné brýle</Czech>
-				<French>Nuances / Lunettes</French>
+				<French>Lunettes</French>
 				<German>Brillen</German>
 				<Italian>Occhiali da sole / occhiali</Italian>
 				<Polish>Rolety / Gogle</Polish>
@@ -469,6 +469,7 @@
 				<Original>Last used Gearset</Original>
 				<English>Last used Gearset</English>
 				<Czech>Poslední Pouzite Vybaveni</Czech>
+				<French>Dernier équipement utilisé</French>
 			</Key>
 		</Container>
 	</Package>
@@ -477,6 +478,7 @@
 			<Key ID="STR_HS_TRADERMENU">
 				<Original>HS Trader Menu:</Original>
 				<English>HS Trader Menu:</English>
+				<English>Menu du vendeur HS:</English>
 			</Key>
 			<Key ID="STR_HS_BUY_MODE">
 				<Original>Buy Mode</Original>
@@ -517,7 +519,7 @@
 				<Original>Confirm Trade</Original>
 				<English>Confirm Trade</English>
 				<Czech>Potvrdit Obchod</Czech>
-				<French>Confirmez le commerce</French>
+				<French>Confirmez la transaction</French>
 				<German>Handel bestätigen</German>
 				<Russian>Подтвердить покупку</Russian>
 				<Spanish>confirmar el comercio</Spanish>
@@ -526,7 +528,7 @@
 				<Original>Click to Confirm Current Trade</Original>
 				<English>Click to Confirm Current Trade</English>	
 				<Czech>Kliknutim Potvrdite Obchod</Czech>
-				<French>Cliquez sur pour confirmer l'achat</French>
+				<French>Cliquez pour confirmer la transaction</French>
 				<German>Klicke um den kauf zu bestätigen</German>
 				<Russian>Кликните для подтверждения покупки</Russian>
 				<Spanish>Haga clic para confirmar la compra</Spanish>
@@ -535,7 +537,7 @@
 				<Original>Select 1/2 Price Rent-a-car or Buy Full Price Vehicle:</Original>
 				<English>Select 1/2 Price Rent-a-car or Buy Full Price Vehicle:</English>
 				<Czech>Muzete si Pronajmout Vozidlo za 1/2 ceny, nebo koupit za Plnou Cenu</Czech>
-				<French>Sélectionnez Moitié prix temporaire ou Full Prix Véhicule:</French>
+				<French>Sélectionnez Moitié prix temporaire ou plein tarif Véhicule:</French>
 				<German>1/2 Preis,Fahrzeug speichert nicht oder voller Preis,Fahrzeug speichert:</German>
 				<Spanish>Seleccione mitad de precio temporal o completa Precio Vehículo Guardados:</Spanish>
 			</Key>

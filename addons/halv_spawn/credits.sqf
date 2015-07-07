@@ -57,6 +57,19 @@ _alltext = [
 		]
 	],
 	[
+		"Awsome translations by:",
+		"#c77000", //orange rust
+		[
+			"alden",
+			"Matez31cz",
+			"Kerozen",
+			"Suppe",
+			"W4lly",
+			"",
+			"And many others i forgot to mention ..."
+		]
+	],
+	[
 		"Server Restarts :",
 		"#ffff00", //Yellow
 		[

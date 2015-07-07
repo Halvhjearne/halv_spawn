@@ -478,7 +478,7 @@
 			<Key ID="STR_HS_TRADERMENU">
 				<Original>HS Trader Menu:</Original>
 				<English>HS Trader Menu:</English>
-				<English>Menu du vendeur HS:</English>
+				<French>Menu du vendeur HS:</French>
 			</Key>
 			<Key ID="STR_HS_BUY_MODE">
 				<Original>Buy Mode</Original>
@@ -553,12 +553,14 @@
 				<Original>Rent 1/2 Price Temp Vehicle</Original>
 				<English>Rent 1/2 Price Temp Vehicle</English>
 				<Czech>Pronajmout za 1/2 Ceny</Czech>
+				<French>Louer moitié prix un véhicule temporaire</French>
 				<German>Miete ein 1/2 Preis Temp Fahrzeug</German>
 			</Key>
 			<Key ID="STR_HS_PRESSTOBUYHALFPRICE">
 				<Original>Press to Rent 1/2 Price Vehicle Until next restart</Original>
 				<English>Press to Rent 1/2 Price Vehicle Until next restart</English>
 				<Czech>Kliknete pro pronajmuti vozidla za 1/2 ceny do Restartu</Czech>
+				<French>Cliquer pour louer à moitié prix un véhicule jusqu'au prochain redémarrage</French>
 				<German>Drücke um ein 1/2 Fahrzeug zu Mieten(nur bis zum restart)</German>
 			</Key>
 			<Key ID="STR_HS_BUYCHECK">
@@ -574,7 +576,7 @@
 				<Original>Press to Check if you can buy a saved vehicle</Original>
 				<English>Press to Check if you can buy a saved vehicle</English>
 				<Czech>Kliknete pro overeni Zda je mozne koupit Ulozene Vozidlo</Czech>
-				<French>Appuyez sur pour vérifier la limite du monde du véhicule</French>
+				<French>cliquer pour vérifier la disponibilité d'un véhicule</French>
 				<German>Fahrzeugworldlimit überprüfen</German>
 				<Spanish>Pulse para comprobar límite mundial de vehículos</Spanish>
 				<Russian>Проверить лимит техники</Russian>
@@ -583,6 +585,7 @@
 				<Original>Assault Rifles</Original>
 				<English>Assault Rifles</English>
 				<Czech>Utocne Pusky</Czech>
+				<French>Fusil d'assaut</French>
 				<German>Sturmgewehre</German>
 				<Russian>Автоматические винтовки</Russian>
 			</Key>
@@ -590,6 +593,7 @@
 				<Original>Hand Guns</Original>
 				<English>Hand Guns</English>
 				<Czech>Pistole</Czech>
+				<French>Pistolets</French>
 				<German>Pistolen</German>
 				<Russian>Пистолет/Ручное</Russian>
 			</Key>
@@ -597,6 +601,7 @@
 				<Original>Machine Guns</Original>
 				<English>Machine Guns</English>
 				<Czech>Kulomety</Czech>
+				<French>Mitrailleuses</French>
 				<German>Maschinengewehre</German>
 				<Russian>Пулемёт</Russian>
 			</Key>
@@ -604,6 +609,7 @@
 				<Original>Sniper Rifles</Original>
 				<English>Sniper Rifles</English>
 				<Czech>Ostrelovaci Pusky</Czech>
+				<French>Fusils de précision</French>
 				<German>Scharfschützengewehre</German>
 				<Russian>Снайперские винтовки</Russian>
 			</Key>
@@ -611,18 +617,21 @@
 				<Original>Submachine Guns</Original>
 				<English>Submachine Guns</English>
 				<Czech>Samopaly</Czech>
+				<French>Mitraillettes</French>
 				<Russian>Пистолет-пулеметы</Russian>
 			</Key>
 			<Key ID="STR_HS_LAUNCHERS">
 				<Original>Launchers</Original>
 				<English>Launchers</English>
 				<Czech>Odpalovace</Czech>
+				<French>Lanceurs</French>
 				<German>Raketenwerfer</German>
 			</Key>
 			<Key ID="STR_HS_OTHER">
 				<Original>Other</Original>
 				<English>Other</English>
 				<Czech>Jine</Czech>
+				<French>Autre</French>
 				<German>Anderes</German>
 				<Russian>Всякое</Russian>
 			</Key>
@@ -630,6 +639,7 @@
 				<Original>Ammo / Bullets</Original>
 				<English>Ammo / Bullets</English>
 				<Czech>Munice</Czech>
+				<French>Munitions</French>
 				<German>Munition</German>
 				<Russian>Боезапас / Патроны</Russian>
 			</Key>
@@ -637,12 +647,14 @@
 				<Original>Rockets / Missiles</Original>
 				<English>Rockets / Missiles</English>
 				<Czech>Rakety</Czech>
+				<French>Roquettes</French>
 				<German>Raketen</German>
 			</Key>
 			<Key ID="STR_HS_BUILDINGSUPP">
 				<Original>Building Supplies</Original>
 				<English>Building Supplies</English>
 				<Czech>Stavebni Material</Czech>
+				<French>Matériaux de construction</French>
 				<German>Bau Material</German>
 				<Russian>Стройматериалы</Russian>
 			</Key>
@@ -650,18 +662,21 @@
 				<Original>Food</Original>
 				<English>Food</English>
 				<Czech>Jidlo</Czech>
+				<French>Alimentation</French>
 				<German>Essen</German>
 			</Key>
 			<Key ID="STR_HS_BIPODS">
 				<Original>Bipods</Original>
 				<English>Bipods</English>
 				<Czech>Dvojnozka</Czech>
+				<French>Bipieds</French>
 				<Russian>Сошки</Russian>
 			</Key>
 			<Key ID="STR_HS_MUZZLES">
 				<Original>Muzzles</Original>
 				<English>Muzzles</English>
 				<Czech>Ustove nasady</Czech>
+				<French>Silencieux</French>
 				<German>Aufsätze</German>
 				<Russian>Глушители</Russian>
 			</Key>
@@ -669,6 +684,7 @@
 				<Original>Optics</Original>
 				<English>Optics</English>
 				<Czech>Optiky</Czech>
+				<French>Viseurs</French>
 				<German>Visiere</German>
 				<Russian>Оптика</Russian>
 			</Key>
@@ -676,6 +692,7 @@
 				<Original>Pointers</Original>
 				<English>Pointers</English>
 				<Czech>Svitilny / Laser</Czech>
+				<French>Pointeurs</French>
 				<German>Laserdesignator</German>
 				<Russian>Целеуказатели</Russian>
 			</Key>
@@ -683,6 +700,7 @@
 				<Original>Smoke Grenades</Original>
 				<English>Smoke Grenades</English>
 				<Czech>Kourove Granaty</Czech>
+				<French>Grenades fumigènes</French>
 				<German>Rauch Granaten</German>
 				<Russian>Дымовые гранаты</Russian>
 			</Key>
@@ -710,6 +728,7 @@
 				<Original>Planes</Original>
 				<English>Planes</English>
 				<Czech>Letadla</Czech>
+				<French>Avions</French>
 				<German>Flugzeuge</German>
 				<Russian>Самолёты</Russian>
 			</Key>
@@ -717,6 +736,7 @@
 				<Original>Helicopters</Original>
 				<English>Helicopters</English>
 				<Czech>Vrtulniky</Czech>
+				<French>Hélicoptères</French>
 				<German>Helicopter</German>
 				<Russian>Вертолёты</Russian>
 			</Key>
@@ -724,6 +744,7 @@
 				<Original>Cars</Original>
 				<English>Cars</English>
 				<Czech>Auta</Czech>
+				<French>Voitures</French>
 				<German>Autos</German>
 				<Russian>Авто</Russian>
 			</Key>
@@ -731,24 +752,28 @@
 				<Original>GoKarts</Original>
 				<English>GoKarts</English>
 				<Czech>Motokary</Czech>
+				<French>Kartings</French>
 				<Russian>Карт</Russian>
 			</Key>
 			<Key ID="STR_HS_TRUCKS">
 				<Original>Trucks</Original>
 				<English>Trucks</English>
 				<Czech>Nakladaky</Czech>
+				<French>Camions</French>
 				<Russian>Грузовики</Russian>
 			</Key>
 			<Key ID="STR_HS_APCS">
 				<Original>APC's</Original>
 				<English>APC's</English>
 				<Czech>Obrneny Transporter</Czech>
+				<French>Blindés</French>
 				<Russian>Бронированные</Russian>
 			</Key>
 			<Key ID="STR_HS_TANKS">
 				<Original>Tanks / Tracked</Original>
 				<English>Tanks / Tracked</English>
 				<Czech>Tanky / Pasove</Czech>
+				<French>Tanks</French>
 				<German>Panzer</German>
 				<Russian>Танки / Гусеничное</Russian>
 			</Key>
@@ -763,12 +788,14 @@
 				<Original>Land</Original>
 				<English>Land</English>
 				<Czech>Pozemni Vozidla</Czech>
+				<French>Terre</French>
 				<Russian>Земля</Russian>
 			</Key>
 			<Key ID="STR_HS_SEA">
 				<Original>Sea</Original>
 				<English>Sea</English>
 				<Czech>Lode</Czech>
+				<French>Mer</French>
 				<German>Wasser</German>
 				<Russian>Вода</Russian>
 			</Key>
@@ -776,6 +803,7 @@
 				<Original>Weapons</Original>
 				<English>Weapons</English>
 				<Czech>Zbrane</Czech>
+				<French>Armes</French>
 				<German>Waffen</German>
 				<Russian>Оружие</Russian>
 			</Key>
@@ -783,6 +811,7 @@
 				<Original>Magazine Items</Original>
 				<English>Magazine Items</English>
 				<Czech>Zasobniky / Veci</Czech>
+				<French>Chargeurs</French>
 				<German>Magazine</German>
 				<Russian>Предметы инвентаря</Russian>
 			</Key>
@@ -790,6 +819,7 @@
 				<Original>Attachments and Tool Items</Original>
 				<English>Attachments and Tool Items</English>
 				<Czech>Prislusenstvi a Nastroje</Czech>
+				<French>Accessoires</French>
 				<German>Aufsätze und Werkzeuge</German>
 				<Russian>Навесное и инструменты</Russian>
 			</Key>
@@ -797,6 +827,7 @@
 				<Original>Equipment / Clothing</Original>
 				<English>Equipment / Clothing</English>
 				<Czech>Vybaveni / Obleceni</Czech>
+				<French>Equipement / Vêtements</French>
 				<German>Equipment / Klamotten</German>
 				<Russian>Обмундирование / Одежда</Russian>
 			</Key>
@@ -804,6 +835,7 @@
 				<Original>Explosives, Smoke and Flare</Original>
 				<English>Explosives, Smoke and Flare</English>
 				<Czech>Vybusniny, Dymovnice a Svetlice</Czech>
+				<French>Explosifs, fumigènes et flares</French>
 				<German>Sprengstoff, Smoke und Flares</German>
 				<Russian>Взрывчатка, дым и сигнал</Russian>
 			</Key>
@@ -811,6 +843,7 @@
 				<Original>Vehicles</Original>
 				<English>Vehicles</English>
 				<Czech>Vozidla</Czech>
+				<French>Véhicules</French>
 				<German>Fahrzeuge</German>
 				<Russian>Техника</Russian>
 			</Key>
@@ -818,7 +851,7 @@
 				<Original>Double click an item to add it to the buy / sell list, switch between buy and sell mode by pressing the Buy / Sell Mode button</Original>
 				<English>Double click an item to add it to the buy / sell list, switch between buy and sell mode by pressing the Buy / Sell Mode button</English>
 				<Czech>Dvoj Klikem pridate predmet k Napupu / Prodeji, prepnout mezi nakupem a prodejem muzete kliknutim na Nakup / Prodej tlacitko</Czech>
-				<French>Double-cliquez sur un objet pour l'ajouter dans la liste, changer entre l'achat / vente en appuyant sur le bouton d'achat</French>
+				<French>Double-cliquez sur un objet pour l'ajouter dans la liste, changer entre l'achat / vente en appuyant sur le bouton d'achat / vente</French>
 				<German>Doppelklick auf einen Gegenstand um diesen in der Liste zuzufügen, wechsel zwischen Kauf / Verkauf indem du den Kauf Knopf drückst</German>
 				<Russian>Дважды кликните по предмету для добавления его в список покупки/продажи. Переключиться между покупкой и продажой можно нажатием кнопки Покупка/Продажа</Russian>
 				<Spanish>Haga doble clic en un objeto para agregarlo en la lista, cambiar entre la compra / venta al presionar el botón de compra</Spanish>
@@ -827,18 +860,20 @@
 				<Original>Price: %1</Original>
 				<English>Price: %1</English>
 				<Czech>Cena: %1</Czech>
+				<French>Prix %1</French>
 				<Russian>Покупка: %1</Russian>
 			</Key>
 			<Key ID="STR_HS_PRICETAX">
 				<Original>Price: %1 - Tax: %2%3 - ServerTax: %4%3</Original>
 				<English>Price: %1 - Tax: %2%3 - ServerTax: %4%3</English>
 				<Czech>Cena: %1 - Poplatek: %2%3 - PoplatekServeru: %4%3</Czech>
+				<French>Prix: %1 - Taxe: %2%3 - Taxe serveur: %4%3</French>
 			</Key>
 			<Key ID="STR_HS_UNIFORMNOTSOLD">
 				<Original>Your Uniform was not empty ... not sold</Original>
 				<English>Your Uniform was not empty ... not sold</English>
 				<Czech>Vase Uniforma Neni prazdna ... neprodano</Czech>
-				<French>Votre Uniform était pas vide ... pas vendu</French>
+				<French>Votre Uniforme n'était pas vide ... pas vendu</French>
 				<German>Deine Uniform ist nicht leer ... wurde nicht verkauft</German>
 				<Russian>Твоя одежда не пуста... нельзя продать</Russian>
 				<Spanish>Su Uniform no estaba vacía ... no se vende</Spanish>
@@ -847,7 +882,7 @@
 				<Original>Your Vest was not empty ... not sold</Original>
 				<English>Your Vest was not empty ... not sold</English>
 				<Czech>Vase Vesta neni prazdna ... neprodano</Czech>
-				<French>Votre Vest était pas vide ... pas vendu</French>
+				<French>Votre gilet n'était pas vide ... pas vendu</French>
 				<German>Deine Weste ist nicht leer ... wurde nicht verkauft</German>
 				<Russian>Твоя разгрузка не пуста... нельзя продать</Russian>
 				<Spanish>Su chaleco no estaba vacía ... no se vende</Spanish>
@@ -856,7 +891,7 @@
 				<Original>Your Backpack was not empty ... not sold</Original>
 				<English>Your Backpack was not empty ... not sold</English>
 				<Czech>Vas Batoh Neni Prazdny ... neprodano</Czech>
-				<French>Votre sac à dos était pas vide ... pas vendu</French>
+				<French>Votre sac à dos n'était pas vide ... pas vendu</French>
 				<German>Dein Rucksack ist nicht leer ... wurde nicht verkauft</German>
 				<Russian>Твой рюкзак не пустой... нельзя продать</Russian>
 				<Spanish>Su mochila no estaba vacía ... no se vende</Spanish>
@@ -883,7 +918,7 @@
 				<Original>You are already wearing a Backpack</Original>
 				<English>You are already wearing a Backpack</English>
 				<Czech>Uz mate Batoh</Czech>
-				<French>Vous êtes déjà vêtu d'une Backpack</French>
+				<French>Vous êtes déjà équipé d'un sac à dos</French>
 				<German>Du trägst bereits einen Rucksack</German>
 				<Russian>Рюкзак уже одет!</Russian>
 				<Spanish>Usted ya llevar un Backpack</Spanish>
@@ -892,7 +927,7 @@
 				<Original>You are already Wearing Glasses</Original>
 				<English>You are already Wearing Glasses</English>
 				<Czech>Uz mate Bryle</Czech>
-				<French>Vous êtes déjà vêtu d'une Glasses</French>
+				<French>Vous êtes déjà équipé de lunettes</French>
 				<German>Du trägst bereits eine Brille</German>
 				<Russian>Очки уже одеты...</Russian>
 				<Spanish>Usted ya llevar un Glasses</Spanish>
@@ -901,7 +936,7 @@
 				<Original>You are already Wearing Headgear</Original>
 				<English>You are already Wearing Headgear</English>
 				<Czech>Uz mate Pokryvku Hlavy</Czech>
-				<French>Vous êtes déjà vêtu d'une Headgear</French>
+				<French>Vous êtes déjà équipé d'un couvre chef</French>
 				<German>Du trägst bereits Headgear</German>
 				<Russian>Головной убор уже одет...</Russian>
 				<Spanish>Usted ya llevar Headgear</Spanish>
@@ -910,7 +945,7 @@
 				<Original>You are already Wearing a Uniform</Original>
 				<English>You are already Wearing a Uniform</English>
 				<Czech>Uz Mate Uniformu</Czech>
-				<French>Vous êtes déjà vêtu d'une uniform</French>
+				<French>Vous êtes déjà vêtu d'un uniforme</French>
 				<German>Du trägst bereits eine Uniform</German>
 				<Russian>Форма уже одета</Russian>
 				<Spanish>Usted ya llevar un uniform</Spanish>
@@ -928,16 +963,16 @@
 				<Original>What you could not have in your inventory is on the ground near you ...</Original>
 				<English>What you could not have in your inventory is on the ground near you ...</English>
 				<Czech>Co se neveslo do vaseho inventare lezi na zemi okolo vas ...</Czech>
-				<French>Qu'est-ce que vous ne pourriez pas avoir dans votre inventaire est sur le terrain près de chez vous</French>
-				<German>Item passt nicht ins Iventar, es liegt jetzt auf dem Boden in der nähe</German>
+				<French>Ce qui n'entre pas dans votre inventaire est sur le sol près de vous ...</French>
+				<German>Item passt nicht ins Iventar, es liegt jetzt auf dem Boden in der nähe ...</German>
 				<Russian>То что не влезло в инвентарь - валяется где то рядом...</Russian>
-				<Spanish>Lo que no se podía tener en su inventario está en el suelo cerca de usted</Spanish>
+				<Spanish>Lo que no se podía tener en su inventario está en el suelo cerca de usted ...</Spanish>
 			</Key>
 			<Key ID="STR_HS_NOTENOGHCRYPTO">
 				<Original>You do not have enough Crypto to buy this ...</Original>
 				<English>You do not have enough Crypto to buy this ...</English>
 				<Czech>Nemate Dostatek Crypto pro nakup ...</Czech>
-				<French>Vous ne disposez pas de suffisamment Crypto</French>
+				<French>Vous ne disposez pas suffisamment de Crypto pour cet achat ...</French>
 				<German>Du hast nicht genug Crypto</German>
 				<Russian>Нужно больше Крипто... нищеброд.</Russian>
 				<Spanish>Usted no tiene suficiente Crypto</Spanish>
@@ -946,7 +981,7 @@
 				<Original>Not allowed to spam this button, wait another %1 seconds</Original>
 				<English>Not allowed to spam this button, wait another %1 seconds</English>
 				<Czech>Neni dovoleno Spamovat toto tlacitko, pockejte dalsich %1 sekund</Czech>
-				<French>Non autorisé à spammer ce bouton, attendre une autre %1 secondes</French>
+				<French>Non autorisé à spammer ce bouton, attendre %1 secondes</French>
 				<German>Es ist nicht erlaubt den Knopf so oft zu drücken, warte %1 sekunden</German>
 				<Russian>Хватить херачить по кнопке, а если я в тебя так потыкаю ?! Подожди хотя бы %1 секунд...</Russian>
 				<Spanish>No se permite el spam en este botón, esperar otro %1 segundo</Spanish>

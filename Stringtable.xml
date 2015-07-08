@@ -66,12 +66,14 @@
 				<Original>Click to Switch between HALO or Ground Spawn</Original>
 				<English>Click to Switch between HALO or Ground Spawn</English>
 				<French>Clickez pour choisir entre le spawn en parachute ou le spawn au sol</French>
+				<Italian>Clicca per cambiare tra Halo e Terra</Italian>
 				<Czech>Klikni pro prepnuti mezi Halo Jumpem nebo zrozeni na Zemi</Czech>
 			</Key>
 			<Key ID="STR_HALV_SELECT_GEAR_OR_SPAWN">
 				<Original>Click to Switch between Gear and Spawn Selection</Original>
 				<English>Click to Switch between Gear and Spawn Selection</English>
 				<French>Cliquez pour sélectionner l'équipement ou un lieu de spawn</French>
+				<Italian>Clicca per cambiare tra Oggetti e Seleziona Spawn</Italian>
 				<Czech>Klikni pro prepnuti Vyberu Vybaveni nebo Zrozeni</Czech>
 			</Key>
 			<Key ID="STR_HALV_SELECT_GEAR">

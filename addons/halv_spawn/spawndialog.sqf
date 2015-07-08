@@ -147,7 +147,7 @@ HALV_fnc_halo = {
 	private "_chute";
 
 	_pos = getPosATL player;
-
+	_pos set [2,(_pos select 2)+2];
 	if (_pos select 2 < 10) then{
 		_chute = createVehicle ["NonSteerable_Parachute_F", _pos, [], 0, "FLY"];
 	}else{
@@ -156,7 +156,7 @@ HALV_fnc_halo = {
 
 	sleep 0.2;
 
-	_chute setDir getDir player;
+	_chute setDir (getDir player);
 	_chute setPosATL _pos;
 	_chute disableCollisionWith player;
 	player moveInDriver _chute;

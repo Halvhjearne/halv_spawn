@@ -512,7 +512,7 @@ class HALV_RscStructuredText
 	idc = -1;
 	style = 0;
 	colorText[] = {1,1,1,1};
-	colorBackground[] = {.2,.2,.2_-,.6};
+	colorBackground[] = {.2,.2,.2,.6};
 	class Attributes
 	{
 		font = "PuristaMedium";

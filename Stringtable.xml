@@ -68,7 +68,7 @@
 				<Czech>Klikni pro prepnuti mezi Halo Jumpem nebo zrozeni na Zemi</Czech>
 				<French>Clickez pour choisir entre le spawn en parachute ou le spawn au sol</French>
 				<Italian>Clicca per cambiare tra Halo e Terra</Italian>
-				<Portuguese>Clique para alternar entre HALO ou do Spawn no chão</Portuguese>
+				<Spanish>Dale click para cambiar entre paracaidas o aparecer en el terreno</Spanish>
 			</Key>
 			<Key ID="STR_HALV_SELECT_GEAR_OR_SPAWN">
 				<Original>Click to Switch between Gear and Spawn Selection</Original>
@@ -76,7 +76,7 @@
 				<Czech>Klikni pro prepnuti Vyberu Vybaveni nebo Zrozeni</Czech>
 				<French>Cliquez pour sélectionner l'équipement ou un lieu de spawn</French>
 				<Italian>Clicca per cambiare tra Oggetti e Seleziona Spawn</Italian>
-				<Portuguese>Clique para alternar entre equipamento e seleção de Spawn </Portuguese>
+                <Spanish>click para cambiar entre equipamiento y punto de aparicion</Spanish>
 			</Key>
 			<Key ID="STR_HALV_SELECT_GEAR">
 				<Original>Select Gear</Original>
@@ -96,7 +96,8 @@
 				<Czech>Nemusite si vybrat vsechno vybavení, vyberte jen par veci ktere chcete ... zbytek dostanete náhodne</Czech>
 				<French>il n'est pas nécessaire de prendre tout l'équipement, selectionnez en quelques uns et choisissez votre lieu de spawn .... vous obtiendrez le reste de façon aléatoire</French>
 				<Italian>Non deviprendere tutti gli oggetti, seleziona solo alcuni e premi Seleziona Spawn..... gli altri rimanenti saranno random</Italian>
-				<Portuguese>Não precisa escolher cada peça de equipamento, basta selecionar alguns e pressione Selecionar Spawn ... Os restantes items serão selecionados aleatoriamente /Portuguese>
+				<Portuguese>Não precisa escolher cada peça de equipamento, basta selecionar alguns e pressione Selecionar Spawn ... Os restantes items serão selecionados aleatoriamente</Portuguese>
+				<Spanish>No se necesita recojer cada piesa de equipamineto, solo seleccione unas y elija punto de aparecimiento ... recibira el resto de los articulos al azar.</Spanish>
 			</Key>
 			<Key ID="STR_HALV_HALO">
 				<Original>HALO Spawn</Original>
@@ -108,7 +109,7 @@
 				<Polish>HALO Spawn</Polish>
 				<Portuguese>HALO Spawn</Portuguese>
 				<Russian>HALO прыжок</Russian>
-				<Spanish>Aparición en HALO</Spanish>
+				<Spanish>Aparición en paracaidas</Spanish>
 			</Key>
 			<Key ID="STR_HALV_HALO_SELECTED">
 				<Original>HALO Spawn Selected</Original>
@@ -120,7 +121,7 @@
 				<Polish>HALO Spawn Wybrane</Polish>
 				<Portuguese>HALO Spawn Selecionado</Portuguese>
 				<Russian>HALO прыжок выбран</Russian>
-				<Spanish>Aparición en HALO seleccionado</Spanish>
+				<Spanish>Aparición en paracaidas seleccionado</Spanish>
 			</Key>
 			<Key ID="STR_HALV_GROUND">
 				<Original>Ground Spawn</Original>
@@ -180,7 +181,7 @@
 				<Polish>Nie może pojawiać się tutaj, masz ciało w pobliżu pozycji ...</Polish>
 				<Portuguese>Não podes spawnar aqui, tens um corpo por perto ...</Portuguese>
 				<Russian>Спавн невозможен, тело неподалёку,мешает ...</Russian>
-				<Spanish>No puedes aparecer aquí, tienes un cuerpo cerca de la posición ...</Spanish>
+				<Spanish>No puedes aparecer aquí, tienes un jugador cerca de la posición ...</Spanish>
 			</Key>
 			<Key ID="STR_HALV_SCROLLOPENCHUTE">
 				<Original>Scroll and press mouse wheel to open chute ...</Original>
@@ -192,7 +193,7 @@
 				<Polish>Przewiń i koło naciśnij myszy, aby otworzyć spadochron ...</Polish>
 				<Portuguese>Scroll e pressione a roda do rato para abrir o paraquedas ...</Portuguese>
 				<Russian>Покрутите колесо мыши и выберите Раскрыть парашут ...</Russian>
-				<Spanish>Scroll y boton central del ratón para abrir paracaídas ...</Spanish>   
+				<Spanish>Rodar el boton central del ratón-mouse para abrir paracaídas ...</Spanish>   
 			</Key>
 			<Key ID="STR_HALV_HALOSPAWNEDNEAR">
 				<Original>HALO Spawned near %1\nGood Luck %2</Original>
@@ -204,7 +205,7 @@
 				<Polish>HALO Spawned pobliżu %1\nPowodzenia %2</Polish>
 				<Portuguese>HALO Spawned perto %1\nBoa Sorte %2</Portuguese>
 				<Russian>HALO прыжок рядом %1\nудачи %2</Russian>
-				<Spanish>Aparición en HALO cerca de %1\nBuena Suerte %2</Spanish>
+				<Spanish>Aparición en paracaidas cerca de %1\nBuena Suerte %2</Spanish>
 			</Key>
 			<Key ID="STR_HALV_SPAWNEDNEAR">
 				<Original>Spawned near %1\nGood Luck %2</Original>
@@ -240,7 +241,7 @@
 				<Polish>Kliknij dwukrotnie dla zarejestrowanych Spawn</Polish>
 				<Portuguese>Double Click para Spawn Registado</Portuguese>
 				<Russian>Двойной щелчок для спавна(регистрация)</Russian>
-				<Spanish>Double click para aparicion de registrados</Spanish>
+				<Spanish>Doble click para punto de aparicion registrada</Spanish>
 			</Key>
 			<Key ID="STR_HALV_REGDONORONLY">
 				<Original>Registered / Donors only ...</Original>
@@ -252,7 +253,7 @@
 				<Polish>Tylko dla darczyńców/zarejestrowanych ...</Polish>
 				<Portuguese>Somente usuários registrados / Doadores ...</Portuguese>
 				<Russian>Только зарегистрированные / Доноры ...</Russian>
-				<Spanish>Sólo Registrados / Donantes ...</Spanish>
+				<Spanish>Sólo Registrados / Donadores ...</Spanish>
 			</Key>
 			<Key ID="STR_HALV_DOUBLECLICKTOSPAWNDON">
 				<Original>Double Click For Donor Spawn</Original>
@@ -264,7 +265,7 @@
 				<Polish>Spawn dla zarejestrowanych. Kliknij dwukrotnie</Polish>
 				<Portuguese>Double Click para Spawn de Doador</Portuguese>
 				<Russian>Двойной щелчок для спавна(донор)</Russian>
-				<Spanish>Double click para aparición de donante</Spanish>
+				<Spanish>Doble click para aparición de donador</Spanish>
 			</Key>
 			<Key ID="STR_HALV_DONORONLY">
 				<Original>Donor only ...</Original>
@@ -276,7 +277,7 @@
 				<Polish>Tylko dla donatorów...</Polish>
 				<Portuguese>Apenas doadores ...</Portuguese>
 				<Russian>Донорам только ...</Russian>
-				<Spanish>Solo donantes ...</Spanish>
+				<Spanish>Solo donadores ...</Spanish>
 			</Key>
 			<Key ID="STR_HALV_LOCKEDBODY">
 				<Original>Locked, Body Nearby ...</Original>
@@ -385,7 +386,7 @@
 				<Polish>Narzędzia (%1)</Polish>
 				<Portuguese>Ferramentas (%1)</Portuguese>
 				<Russian>Инструменты (%1)</Russian>
-				<Spanish>Artículos (%1)</Spanish>
+				<Spanish>Herramientas (%1)</Spanish>
 			</Key>
 			<Key ID="STR_HALV_ITEMS">
 				<Original>Items (%1)</Original>
@@ -421,7 +422,7 @@
 				<Polish>Nakrycia głowy</Polish>
 				<Portuguese>Capacetes</Portuguese>
 				<Russian>головной убор</Russian>
-				<Spanish>Gorras y cascos</Spanish>
+				<Spanish>Cascos</Spanish>
 			</Key>
 			<Key ID="STR_HALV_VESTS">
 				<Original>Vests</Original>
@@ -467,7 +468,7 @@
 				<German>Rucksäcke</German>
 				<Italian>Zaini</Italian>
 				<Polish>Plecaki</Polish>
-				<Portuguese>mochilas</Portuguese>
+				<Portuguese>Mochilas</Portuguese>
 				<Russian>Рюкзаки</Russian>
 				<Spanish>Mochilas</Spanish>
 			</Key>
@@ -477,6 +478,7 @@
 				<Czech>Poslední Pouzite Vybaveni</Czech>
 				<French>Dernier équipement utilisé</French>
 				<Portuguese>Ultimo equipamento usado</Portuguese>
+				<Spanish>Ultimo equipamiento usado</Spanish>
 			</Key>
 		</Container>
 	</Package>
@@ -486,7 +488,7 @@
 				<Original>HS Trader Menu:</Original>
 				<English>HS Trader Menu:</English>
 				<French>Menu du vendeur HS:</French>
-				<Portuguese>Menu HS Trader:</Portuguese>
+                <Spanish>Menu del mercado negro</Spanish>
 			</Key>
 			<Key ID="STR_HS_BUY_MODE">
 				<Original>Buy Mode</Original>
@@ -519,7 +521,7 @@
 				<German>Klick um zwischen Kaufen / Verkaufen zu wechseln</German>
 				<Portuguese>Clique para alternar entre Modo Compra / Venda</Portuguese>
 				<Russian>Кликните для переключения режима торговли.</Russian>
-				<Spanish>Haga clic para cambiar entre Comprar / Modo de Venta</Spanish>
+				<Spanish>Haga clic para cambiar entre modo de Comprar / Modo de Venta</Spanish>
 			</Key>
 			<Key ID="STR_HS_CURRENTTRADE">
 				<Original>Current Trade Cost / Reward</Original>
@@ -540,7 +542,7 @@
 				<German>Handel bestätigen</German>
 				<Portuguese>Confirmar Troca</Portuguese>
 				<Russian>Подтвердить покупку</Russian>
-				<Spanish>confirmar el comercio</Spanish>
+				<Spanish>confirmar transaccion</Spanish>
 			</Key>
 			<Key ID="STR_HS_CLICKTOCONFIRMTRADE">
 				<Original>Click to Confirm Current Trade</Original>
@@ -550,7 +552,7 @@
 				<Italian>Clicca per confermare la corrente transazione</Italian>
 				<German>Klicke um den kauf zu bestätigen</German>
 				<Russian>Кликните для подтверждения покупки</Russian>
-				<Spanish>Haga clic para confirmar la compra</Spanish>
+				<Spanish>Haga clic para confirmar transaccion</Spanish>
 			</Key>
 			<Key ID="STR_HS_SELECTHALFORFULLTEXT">
 				<Original>Select 1/2 Price Rent-a-car or Buy Full Price Vehicle:</Original>
@@ -560,7 +562,7 @@
 				<Italian>Selezionare compra temporaneamente o acquisto completo</Italian>
 				<German>1/2 Preis,Fahrzeug speichert nicht oder voller Preis,Fahrzeug speichert:</German>
 				<Portuguese>Selecione Alugue um Veículo por metade do preço ou Compre um Veículo pelo preço total</Portuguese>
-				<Spanish>Seleccione mitad de precio temporal o completa Precio Vehículo Guardados:</Spanish>
+				<Spanish>Seleccione renta de vehiculo temporal o compra de vehiculo para ser almacenado:</Spanish>
 			</Key>
 			<Key ID="STR_HS_BUYFULLPRICE">
 				<Original>Buy Full Price Saved Vehicle</Original>
@@ -579,7 +581,7 @@
 				<French>Louer moitié prix un véhicule temporaire</French>
 				<Italian>Compra 1/2 prezzo temporaneamente</Italian>
 				<German>Miete ein 1/2 Preis Temp Fahrzeug</German>
-				<Portuguese>Alugue um Veículo temporário por metade do preço</Portuguese>
+				<Spanish>Rentar vehiculo temporal por mitad de precio</Spanish>
 			</Key>
 			<Key ID="STR_HS_PRESSTOBUYHALFPRICE">
 				<Original>Press to Rent 1/2 Price Vehicle Until next restart</Original>
@@ -588,7 +590,7 @@
 				<French>Cliquer pour louer à moitié prix un véhicule jusqu'au prochain redémarrage</French>
 				<Italian>Clicca per comprare 1/2 prezzo finio al restart</Italian>
 				<German>Drücke um ein 1/2 Fahrzeug zu Mieten(nur bis zum restart)</German>
-				<Portuguese>Pressione para Aluguer Veículo Até a próxima reinicialização</Portuguese>
+                <Spanish>Precionar para rentar vehiculo a mitad de precio, hasta el siguiente reseteada del servidor</Spanish>
 			</Key>
 			<Key ID="STR_HS_BUYCHECK">
 				<Original>Check Availability</Original>
@@ -599,7 +601,7 @@
 				<German>Verfuegbarkeit überprüfen</German>
 				<Portuguese>Verificar Disponibilidade</Portuguese>
 				<Russian>Проверить наличие</Russian>
-				<Spanish>Comprobar disponibilidad</Spanish>
+				<Spanish>Checar disponibilidad</Spanish>
 			</Key>
 			<Key ID="STR_HS_PRESSTOCHECK">
 				<Original>Press to Check if you can buy a saved vehicle</Original>
@@ -608,9 +610,8 @@
 				<French>cliquer pour vérifier la disponibilité d'un véhicule</French>
 				<Italian>Premi per controllare se puoi comprare e salvare il veicolo</Italian>
 				<German>Fahrzeugworldlimit überprüfen</German>
-				<Portuguese>Pressione para Verificar se você pode comprar um veículo guardado</Portuguesel>
 				<Russian>Проверить лимит техники</Russian>
-				<Spanish>Pulse para comprobar límite mundial de vehículos</Spanish>
+				<Spanish>Precione para checar disponibilidad limitada de vehículos</Spanish>
 			</Key>
 			<Key ID="STR_HS_ASSAULTRIFLES">
 				<Original>Assault Rifles</Original>
@@ -621,6 +622,7 @@
 				<German>Sturmgewehre</German>
 				<Portuguese>Armas de Assalto</Portuguese>
 				<Russian>Автоматические винтовки</Russian>
+                <Spanish>Rifles de asalto</Spanish>
 			</Key>
 			<Key ID="STR_HS_HANDGUNS">
 				<Original>Hand Guns</Original>
@@ -631,6 +633,7 @@
 				<German>Pistolen</German>
 				<Portuguese>Pistolas</Portuguese>
 				<Russian>Пистолет/Ручное</Russian>
+                <Spanish>Pistolas</Spanish>
 			</Key>
 			<Key ID="STR_HS_MACHINEGUNS">
 				<Original>Machine Guns</Original>
@@ -641,6 +644,7 @@
 				<German>Maschinengewehre</German>
 				<Portuguese>Metralhadoras</Portuguese>
 				<Russian>Пулемёт</Russian>
+                <Spanish>ametralladoras</Spanish>
 			</Key>
 			<Key ID="STR_HS_SNIPERRIFLES">
 				<Original>Sniper Rifles</Original>
@@ -651,6 +655,7 @@
 				<German>Scharfschützengewehre</German>
 				<Portuguese>Sub Metrelhadoras</Portuguese>
 				<Russian>Снайперские винтовки</Russian>
+                <Spanish>Rifles de francotirador</Spanish>
 			</Key>
 			<Key ID="STR_HS_SUBMACHINEGUNS">
 				<Original>Submachine Guns</Original>
@@ -659,6 +664,7 @@
 				<French>Mitraillettes</French>
 				<Italian>Mitragliette</Italian>
 				<Russian>Пистолет-пулеметы</Russian>
+                <Spanish>armas semi-automaticas</Spanish>
 			</Key>
 			<Key ID="STR_HS_LAUNCHERS">
 				<Original>Launchers</Original>
@@ -667,6 +673,7 @@
 				<French>Lanceurs</French>
 				<Italian>Lanchers</Italian>
 				<German>Raketenwerfer</German>
+                <Spanish>Lanza missiles</Spanish>
 			</Key>
 			<Key ID="STR_HS_OTHER">
 				<Original>Other</Original>
@@ -677,6 +684,7 @@
 				<German>Anderes</German>
 				<Portuguese>Outros</Portuguese>
 				<Russian>Всякое</Russian>
+                <Spanish>Otros</Spanish>
 			</Key>
 			<Key ID="STR_HS_AMMOBULLETS">
 				<Original>Ammo / Bullets</Original>
@@ -687,6 +695,7 @@
 				<German>Munition</German>
 				<Portuguese>Munições / Balas</Portuguese>
 				<Russian>Боезапас / Патроны</Russian>
+                <Spanish>Municiones</Spanish>
 			</Key>
 			<Key ID="STR_HS_AMMOROCKETS">
 				<Original>Rockets / Missiles</Original>
@@ -696,6 +705,7 @@
 				<Italian>Razzi /Missili</Italian>
 				<German>Raketen</German>
 				<Portuguese>Rockets / Misseis</Portuguese>
+                <Spanish>Misiles</Spanish>
 			</Key>
 			<Key ID="STR_HS_BUILDINGSUPP">
 				<Original>Building Supplies</Original>
@@ -706,6 +716,7 @@
 				<German>Bau Material</German>
 				<Portuguese>Material de Construção</Portuguese>
 				<Russian>Стройматериалы</Russian>
+                <Spanish>Materiales de construcion</Spanish>
 			</Key>
 			<Key ID="STR_HS_FOOD">
 				<Original>Food</Original>
@@ -715,6 +726,7 @@
 				<Italian>Alimentari</Italian>
 				<German>Essen</German>
 				<Portuguese>Alimentos</Portuguese>
+                <Spanish>Alimentos</Spanish>
 			</Key>
 			<Key ID="STR_HS_BIPODS">
 				<Original>Bipods</Original>
@@ -723,6 +735,7 @@
 				<French>Bipieds</French>
 				<Italian>Bipodi</Italian>
 				<Russian>Сошки</Russian>
+                <Spanish>Bipodes</Spanish>
 			</Key>
 			<Key ID="STR_HS_MUZZLES">
 				<Original>Muzzles</Original>
@@ -732,6 +745,7 @@
 				<Italian>Silenziatori</Italian>
 				<German>Aufsätze</German>
 				<Russian>Глушители</Russian>
+                <Spanish>Silenciadores</Spanish>
 			</Key>
 			<Key ID="STR_HS_OPTICS">
 				<Original>Optics</Original>
@@ -742,6 +756,7 @@
 				<German>Visiere</German>
 				<Portuguese>Miras</Portuguese>
 				<Russian>Оптика</Russian>
+                <Spanish>Reticulas</Spanish>
 			</Key>
 			<Key ID="STR_HS_POINTERS">
 				<Original>Pointers</Original>
@@ -751,6 +766,7 @@
 				<Italian>Puntatori</Italian>
 				<German>Laserdesignator</German>
 				<Russian>Целеуказатели</Russian>
+                <Spanish>Laser</Spanish>
 			</Key>
 			<Key ID="STR_HS_SMOKES">
 				<Original>Smoke Grenades</Original>
@@ -761,12 +777,14 @@
 				<German>Rauch Granaten</German>
 				<Portuguese>Granadas de Fumo</Portuguese>
 				<Russian>Дымовые гранаты</Russian>
+                <Spanish>Granadas de humo</Spanish>
 			</Key>
 			<Key ID="STR_HS_FLARES">
 				<Original>Flares</Original>
 				<English>Flares</English>
 				<Czech>Svetlice</Czech>
 				<Russian>Сигнальные ракеты</Russian>
+                <Spanish>Bengalas</Spanish>
 			</Key>
 			<Key ID="STR_HS_GRENADES">
 				<Original>Grenades</Original>
@@ -776,6 +794,7 @@
 				<German>Granaten</German>
 				<Portuguese>Granadas</Portuguese>
 				<Russian>Гранаты</Russian>
+                <Spanish>Granadas</Spanish>
 			</Key>
 			<Key ID="STR_HS_MINES">
 				<Original>Mines</Original>
@@ -785,6 +804,7 @@
 				<German>Minen</German>
 				<Portuguese>Minas</Portuguese>
 				<Russian>Мины</Russian>
+                <Spanish>Minas</Spanish>
 			</Key>
 			<Key ID="STR_HS_PLANES">
 				<Original>Planes</Original>
@@ -795,6 +815,7 @@
 				<German>Flugzeuge</German>
 				<Portuguese>Aviões</Portuguese>
 				<Russian>Самолёты</Russian>
+                <Spanish>Aviones</Spanish>
 			</Key>
 			<Key ID="STR_HS_HELICOPTERS">
 				<Original>Helicopters</Original>
@@ -805,6 +826,7 @@
 				<German>Helicopter</German>
 				<Portuguese>Helicópteros</Portuguese>
 				<Russian>Вертолёты</Russian>
+                <Spanish>Helicopteros</Spanish>
 			</Key>
 			<Key ID="STR_HS_CARS">
 				<Original>Cars</Original>
@@ -815,6 +837,7 @@
 				<German>Autos</German>
 				<Portuguese>Carros</Portuguese>
 				<Russian>Авто</Russian>
+                <Spanish>Carros</Spanish>
 			</Key>
 			<Key ID="STR_HS_GOKARTS">
 				<Original>GoKarts</Original>
@@ -822,6 +845,7 @@
 				<Czech>Motokary</Czech>
 				<French>Kartings</French>
 				<Russian>Карт</Russian>
+                <Spanish>Cochecitos</Spanish>
 			</Key>
 			<Key ID="STR_HS_TRUCKS">
 				<Original>Trucks</Original>
@@ -831,6 +855,7 @@
 				<Italian>Camion</Italian>
 				<Portuguese>Carrinhas</Portuguese>
 				<Russian>Грузовики</Russian>
+                <Spanish>Camiones</Spanish>
 			</Key>
 			<Key ID="STR_HS_APCS">
 				<Original>APC's</Original>
@@ -838,6 +863,7 @@
 				<Czech>Obrneny Transporter</Czech>
 				<French>Blindés</French>
 				<Russian>Бронированные</Russian>
+                <Spanish>Vehiculos blindados</Spanish>
 			</Key>
 			<Key ID="STR_HS_TANKS">
 				<Original>Tanks / Tracked</Original>
@@ -847,6 +873,7 @@
 				<Italian>Carri Armati</Italian>
 				<German>Panzer</German>
 				<Russian>Танки / Гусеничное</Russian>
+                <Spanish>Tanques</Spanish>
 			</Key>
 			<Key ID="STR_HS_AIR">
 				<Original>Air</Original>
@@ -856,6 +883,7 @@
 				<German>Luft</German>
 				<Portuguese>Ar</Portuguese>
 				<Russian>Воздух</Russian>
+                <Spanish>Aire</Spanish>
 			</Key>
 			<Key ID="STR_HS_LAND">
 				<Original>Land</Original>
@@ -865,6 +893,7 @@
 				<Italian>Terra</Italian>
 				<Portuguese>Terra</Portuguese>
 				<Russian>Земля</Russian>
+                <Spanish>Terreno</Spanish>
 			</Key>
 			<Key ID="STR_HS_SEA">
 				<Original>Sea</Original>
@@ -875,6 +904,7 @@
 				<German>Wasser</German>
 				<Portuguese>Mar</Portuguese>
 				<Russian>Вода</Russian>
+                <Spanish>Mar</Spanish>
 			</Key>
 			<Key ID="STR_HS_WEAPONS">
 				<Original>Weapons</Original>
@@ -885,6 +915,7 @@
 				<German>Waffen</German>
 				<Portuguese>Armas</Portuguese>
 				<Russian>Оружие</Russian>
+                <Spanish>Armas</Spanish>
 			</Key>
 			<Key ID="STR_HS_MAGAZINEITEMS">
 				<Original>Magazine Items</Original>
@@ -894,6 +925,7 @@
 				<Italian>Caricatori</Italian>
 				<German>Magazine</German>
 				<Russian>Предметы инвентаря</Russian>
+                <Spanish>Cartuchos de armas</Spanish>
 			</Key>
 			<Key ID="STR_HS_ATTACHMENTSTOOLS">
 				<Original>Attachments and Tool Items</Original>
@@ -904,6 +936,7 @@
 				<German>Aufsätze und Werkzeuge</German>
 				<Portuguese>Acessórios e Ferramentas</Portuguese>
 				<Russian>Навесное и инструменты</Russian>
+                <Spanish>Accesorios y articulos de herramientas</Spanish>
 			</Key>
 			<Key ID="STR_HS_EQUIPCLOTHING">
 				<Original>Equipment / Clothing</Original>
@@ -914,6 +947,7 @@
 				<German>Equipment / Klamotten</German>
 				<Portuguese>Equipamento / Roupa</Portuguese>
 				<Russian>Обмундирование / Одежда</Russian>
+                <Spanish>Equipo / Vestimenta</Spanish>
 			</Key>
 			<Key ID="STR_HS_EXPLOSMOKEFLARE">
 				<Original>Explosives, Smoke and Flare</Original>
@@ -924,6 +958,7 @@
 				<German>Sprengstoff, Smoke und Flares</German>
 				<Portuguese>Explosivos, Fumo e Flare</Portuguese>
 				<Russian>Взрывчатка, дым и сигнал</Russian>
+                <Spanish>Explosivos, Granadas de humo y bengalas</Spanish>
 			</Key>
 			<Key ID="STR_HS_VEHICLES">
 				<Original>Vehicles</Original>
@@ -934,6 +969,7 @@
 				<German>Fahrzeuge</German>
 				<Portuguese>Veículos</Portuguese>
 				<Russian>Техника</Russian>
+                <Spanish>Vehiculos</Spanish>
 			</Key>
 			<Key ID="STR_HS_DOUBLECLICKTOADD">
 				<Original>Double click an item to add it to the buy / sell list, switch between buy and sell mode by pressing the Buy / Sell Mode button</Original>
@@ -954,6 +990,7 @@
 				<Italian>Prezzo %1</Italian>
 				<Portuguese>Preço: %1</Portuguese>
 				<Russian>Покупка: %1</Russian>
+                <Spanish>Precio: %1</Spanish>
 			</Key>
 			<Key ID="STR_HS_PRICETAX">
 				<Original>Price: %1 - Tax: %2%3 - ServerTax: %4%3</Original>
@@ -961,7 +998,7 @@
 				<Czech>Cena: %1 - Poplatek: %2%3 - PoplatekServeru: %4%3</Czech>
 				<French>Prix: %1 - Taxe: %2%3 - Taxe serveur: %4%3</French>
 				<Italian>Prezzo %1 - Tassa: %2%3 - Tassa server: %4%3</Italian>
-				<Portuguese>Preço: %1 - Taxa: %2%3 - ServerTax: %4%3</Portuguese>
+                <Spanish>Precio: %1 - Impuesto: %2%3 - Impuesto del server: %4%3</Spanish>
 			</Key>
 			<Key ID="STR_HS_UNIFORMNOTSOLD">
 				<Original>Your Uniform was not empty ... not sold</Original>
@@ -972,7 +1009,7 @@
 				<German>Deine Uniform ist nicht leer ... wurde nicht verkauft</German>
 				<Portuguese>O uniforme não estava vazia ... não foi vendido</Portuguese>
 				<Russian>Твоя одежда не пуста... нельзя продать</Russian>
-				<Spanish>Su Uniform no estaba vacía ... no se vende</Spanish>
+				<Spanish>Su Uniforme no estaba vacío ... no se vende</Spanish>
 			</Key>
 			<Key ID="STR_HS_VESTNOTSOLD">
 				<Original>Your Vest was not empty ... not sold</Original>
@@ -983,7 +1020,7 @@
 				<German>Deine Weste ist nicht leer ... wurde nicht verkauft</German>
 				<Portuguese>O Colete não estava vazia ... não foi vendido</Portuguese>
 				<Russian>Твоя разгрузка не пуста... нельзя продать</Russian>
-				<Spanish>Su chaleco no estaba vacía ... no se vende</Spanish>
+				<Spanish>Su chaleco no estaba vacío ... no se vende</Spanish>
 			</Key>
 			<Key ID="STR_HS_BACKPACKNOTSOLD">
 				<Original>Your Backpack was not empty ... not sold</Original>
@@ -1027,7 +1064,7 @@
 				<German>Du trägst bereits einen Rucksack</German>
 				<Portuguese>Você já está usando uma mochila</Portuguese>
 				<Russian>Рюкзак уже одет!</Russian>
-				<Spanish>Usted ya llevar un Backpack</Spanish>
+				<Spanish>Usted ya tiene una mochila equipada</Spanish>
 			</Key>
 			<Key ID="STR_HS_ALREADYWEARINGGLASSES">
 				<Original>You are already Wearing Glasses</Original>
@@ -1038,7 +1075,7 @@
 				<German>Du trägst bereits eine Brille</German>
 				<Portuguese>Você já está usando uma Óculos</Portuguese>
 				<Russian>Очки уже одеты...</Russian>
-				<Spanish>Usted ya llevar un Glasses</Spanish>
+				<Spanish>Usted ya lleva unas gafas equipadas</Spanish>
 			</Key>
 			<Key ID="STR_HS_ALREADYWEARINGHEADGEAR">
 				<Original>You are already Wearing Headgear</Original>
@@ -1049,7 +1086,7 @@
 				<German>Du trägst bereits Headgear</German>
 				<Portuguese>Você já está usando um capacete</Portuguese>
 				<Russian>Головной убор уже одет...</Russian>
-				<Spanish>Usted ya llevar Headgear</Spanish>
+				<Spanish>Usted ya lleva un casco equipado</Spanish>
 			</Key>
 			<Key ID="STR_HS_ALREADYWEARINGUNIFORM">
 				<Original>You are already Wearing a Uniform</Original>
@@ -1060,7 +1097,7 @@
 				<German>Du trägst bereits eine Uniform</German>
 				<Portuguese>Você já está usando um Uniforme</Portuguese>
 				<Russian>Форма уже одета</Russian>
-				<Spanish>Usted ya llevar un uniform</Spanish>
+				<Spanish>Usted ya lleva un uniforme equipado</Spanish>
 			</Key>
 			<Key ID="STR_HS_ALREADYWEARINGVEST">
 				<Original>You are already Wearing a vest</Original>
@@ -1071,7 +1108,7 @@
 				<German>Du trägst bereits eine Veste</German>
 				<Portuguese>Você já está usando um Colete</Portuguese>
 				<Russian>Разгрузка уже одета</Russian>
-				<Spanish>Usted ya llevar un chaleco</Spanish>
+				<Spanish>Usted ya lleva un chaleco equipado</Spanish>
 			</Key>
 			<Key ID="STR_HS_ONGROUNDNEARYOU">
 				<Original>What you could not have in your inventory is on the ground near you ...</Original>
@@ -1082,7 +1119,7 @@
 				<German>Item passt nicht ins Iventar, es liegt jetzt auf dem Boden in der nähe ...</German>
 				<Portuguese>O que você não pode ter no seu inventário está no chão perto de si ...</Portuguese>
 				<Russian>То что не влезло в инвентарь - валяется где то рядом...</Russian>
-				<Spanish>Lo que no se podía tener en su inventario está en el suelo cerca de usted ...</Spanish>
+				<Spanish>Lo que no se peude tener en su inventario está en el suelo cerca de usted ...</Spanish>
 			</Key>
 			<Key ID="STR_HS_NOTENOGHCRYPTO">
 				<Original>You do not have enough Crypto to buy this ...</Original>
@@ -1093,7 +1130,7 @@
 				<German>Du hast nicht genug Crypto</German>
 				<Portuguese>Você não tem Crypto suficiente para comprar isto</Portuguese>
 				<Russian>Нужно больше Крипто... нищеброд.</Russian>
-				<Spanish>Usted no tiene suficiente Crypto</Spanish>
+				<Spanish>Usted no tiene suficiente Crypto para completar transacion</Spanish>
 			</Key>
 			<Key ID="STR_HS_NOTALLOWEDTOSPAM">
 				<Original>Not allowed to spam this button, wait another %1 seconds</Original>

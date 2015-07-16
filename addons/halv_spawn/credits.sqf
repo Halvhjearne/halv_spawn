@@ -2,8 +2,6 @@ if(isServer)exitWith{};
 /*
 	Simple Credits script
 	by Halv
-	
-	Copyright (C) 2015  Halvhjearne > README.md
 */
 sleep 2.5; // sleep before the welcome message starts (in seconds)
 
@@ -15,14 +13,15 @@ _alltext = [
 		"#71C700", //green light
 		[
 			//Sub Text(s)
-			"- HALV's Server -"
+			"   Halv's",
+			"- Epoch Warfare Server -"
 		]
 	],
 	[
 		"Teamspeak ]I[ Server :",
 		"#c77000", //orange rust
 		[
-			"halv.ddns.net:9995"," ","Channels for Players to Use"
+			"halv.ddns.net:9995"
 		]
 	],
 	[
@@ -43,8 +42,8 @@ _alltext = [
 		"Server Mods :",
 		"#0096ff", //Blue Light
 		[
-			"AI + Missions","Call In Airdrops","Craft Bike (comming)","Select Gear / HALO Spawn","Special (no limit) Traders",
-			"Lift and Tow","Nitro (USER19) (soon)","No DLC Locked Vehicles","Repair / Re-Arm Stations","Vehicle Paint Shops",
+			"AI + Missions","Call In Airdrops","Capture Points","Earplugs (+/-)","HALO Eject A2 Style","Select Gear / HALO Spawn",
+			"Special (no limit) Traders","Lift and Tow","No DLC Locked Vehicles","Repair/Re-Arm Stations","Vehicle/Uniform/Bag Paint Shops",
 
 			"And Much more ..."
 		]
@@ -53,7 +52,7 @@ _alltext = [
 		"Server Scripted by :",
 		"#C80000", //Red dark
 		[
-			"- HALV -"
+			"- Halv -"
 		]
 	],
 	[
@@ -65,6 +64,7 @@ _alltext = [
 			"Kerozen",
 			"Suppe",
 			"W4lly",
+			"Tophi",
 			"",
 			"And many others i forgot to mention ..."
 		]
@@ -73,15 +73,15 @@ _alltext = [
 		"Server Restarts :",
 		"#ffff00", //Yellow
 		[
-			//"4 Hour","Schedule"," (not set times)"
-			"00:00","04:00","08:00","12:00","16:00","20:00","GMT + 1"
+			"4 Hour Schedule"," "," (not set times)"
+			//"00:00","04:00","08:00","12:00","16:00","20:00","GMT + 1"
 		]
 	],
 	[
 		"Support / Help / Donor Info:",
 		"#71C700", //green light
 		[
-			"All Found on","Halv's Blog","halv.ddns.net","or","Ts3:","halv.ddns.net:9995"
+			"All Found on","Halv's Blog"," ","halv.ddns.net"," ","or Ts3:"," ","halv.ddns.net:9995"
 		]
 	],
 	[

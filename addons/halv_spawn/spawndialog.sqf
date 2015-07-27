@@ -8,15 +8,15 @@
 #include "spawn_gear_settings.sqf";
 _scriptpath = _this select 0;
 _rspawnw = getMarkerPos "respawn_west";
-HALV_Center = getMarkerPos "center";
+_HALV_Center = getMarkerPos "center";
 // Makes the script start when player is ingame
-waitUntil{!isNil "HALV_senddeftele"};
 waitUntil{!isNil "Epoch_my_GroupUID"};
+waitUntil{!isNil "HALV_senddeftele"};
 
 //exit if player is not near a spawn
-if(player distance _rspawnw > 35)exitWith{Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;HALV_fnc_halo = nil;HALV_playeraddcolours = nil;diag_log "Spawn Menu Aborted...";};
+if(player distance _rspawnw > 35)exitWith{Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;HALV_fnc_halo = nil;HALV_playeraddcolours = nil;diag_log "Spawn Menu Aborted...";};
 diag_log format["[halv_spawn] waiting for new teleports to be build in %1 ...",worldName];
-{_x addAction ["<img size='1.5'image='\a3\Ui_f\data\IGUI\Cfg\Actions\ico_cpt_start_on_ca.paa'/> <t color='#0096ff'>Select</t><t > </t><t color='#00CC00'>Spawn</t>",(_scriptpath+"opendialog.sqf"),_x, -9, true, true, "", "player distance _target < 5"];}forEach (HALV_senddeftele select 0);
+{_x addAction [format["<img size='1.5'image='\a3\Ui_f\data\IGUI\Cfg\Actions\ico_cpt_start_on_ca.paa'/> <t color='#0096ff'>%1</t><t > </t><t color='#00CC00'>%2</t>",localize "STR_HALV_SCROLL_SELECT",localize "STR_HALV_SCROLL_SPAWN"],(_scriptpath+"opendialog.sqf"),_x, -9, true, true, "", "player distance _target < 5"];}forEach (HALV_senddeftele select 0);
 diag_log format["[halv_spawn] addAction added to %1",HALV_senddeftele];
 waitUntil {!dialog};
 
@@ -76,7 +76,7 @@ if(_spawnNearJammer)then{
 			_name = _jamvar call Halv_near_cityname;
 			Halv_spawns pushBack [_jamvar,6,format["%1 (%2)",_name,localize "STR_HALV_NEAR_JAMMER"]];
 		}; 
-	}forEach (HALV_Center nearObjects ["PlotPole_EPOCH",_jamarea]);
+	}forEach (_HALV_Center nearObjects ["PlotPole_EPOCH",_jamarea]);
 };
 
 if(_spawnNearGroup)then{
@@ -95,13 +95,13 @@ if(_adddefaultspawns)then{
 	}forEach (HALV_senddeftele select 1);
 };
 
-Halv_moveMap = {
+_string = "
 	disableSerialization;
 	_lb = _this select 0;
 	_index = _this select 1;
 	_value = _lb lbValue _index;
 	_zoom = 1;
-	_spawn = HALV_Center;
+	_spawn = "+(str _HALV_Center)+";
 	if !(_value in [-1,-2,-3]) then {
 		_spawn = (Halv_spawns select _value)select 0;
 		_zoom = .15;
@@ -110,14 +110,14 @@ Halv_moveMap = {
 	ctrlMapAnimClear _ctrl;
 	_ctrl ctrlMapAnimAdd [1,_zoom,_spawn];
 	ctrlMapAnimCommit _ctrl;
-};
+";
+Halv_moveMap = compile _string;
 
-HALV_addiweaponwithammo = {
-	#include "spawn_gear_settings.sqf";
-	_ammo = [] + getArray (configFile >> "cfgWeapons" >> _this >> "magazines");
+_string = "
+	_ammo = [] + getArray (configFile >> 'cfgWeapons' >> _this >> 'magazines');
 	if (count _ammo > 0) then {
-		_ammoamount = if(_this in ((_geararr select 1) select 0))then{((_geararr select 1) select 1)}else{((_geararr select 0) select 1)};
-		for "_i" from 1 to _ammoamount do {
+		_ammoamount = if(_this in ("+(str((_geararr select 1) select 0))+"))then{"+(str((_geararr select 1) select 1))+"}else{"+(str((_geararr select 0) select 1))+"};
+		for '_i' from 1 to _ammoamount do {
 			_rnd = _ammo select 0;
 			player addMagazine _rnd;
 		};
@@ -125,7 +125,8 @@ HALV_addiweaponwithammo = {
 	player addWeapon _this;
 	player selectWeapon _this;
 	reload player;
-};
+";
+HALV_addiweaponwithammo = compile _string;
 
 HALV_fnc_halo = {
 	waitUntil{animationState player == "halofreefall_non"};
@@ -424,7 +425,7 @@ Halv_spawn_player = {
 	};
 	if !(_script isEqualTo "")then{execVM _script;};
 	if(_addcolours)then{_servername call HALV_playeraddcolours;};
-	Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_Center = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;HALV_fnc_halo = nil;HALV_playeraddcolours = nil;
+	Halv_moveMap = nil;Halv_fill_spawn = nil;Halv_near_cityname = nil;Halv_spawn_player = nil;Halv_spawns = nil;HALV_senddeftele = nil;HALV_HALO = nil;HALV_SELECTSPAWN = nil;HALV_fill_gear = nil;HALV_fnc_returnnameandpic = nil;HALV_fill_gear = nil;Halv_ontreedoubleclick = nil;Halv_ontreeselected = nil;HALV_GEAR_TOADD = nil;HALV_player_removelisteditem = nil;HALV_addiweaponwithammo = nil;HALV_fnc_halo = nil;HALV_playeraddcolours = nil;
 };
 
 HALV_switch_spawngear = {

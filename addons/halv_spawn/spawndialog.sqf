@@ -179,8 +179,7 @@ HALV_fnc_halo = {
 };
 
 HALV_playeraddcolours = {
-	_pname = format["%1_BAGCOLOR",_this];
-	_pcolor = profileNamespace getVariable [_pname,[]];
+	_pcolor = profileNamespace getVariable ["HALV_BAGCOLOR",[]];
 	if (!(_pcolor isEqualTo []) && !(Backpack player in ["","B_Parachute","B_O_Parachute_02_F","B_I_Parachute_02_F","B_B_Parachute_02_F"]))then{
 		_bag = (unitBackpack player);
 		if(count(getObjectTextures _bag) > 0)then{
@@ -199,8 +198,7 @@ HALV_playeraddcolours = {
 		};
 	};
 
-	_pname = format["%1_UNIFORMCOLOR",_this];
-	_pcolor = profileNamespace getVariable [_pname,[]];
+	_pcolor = profileNamespace getVariable ["HALV_UNIFORMCOLOR",[]];
 	if (!(_pcolor isEqualTo []) && !(Uniform player in ["","U_Test1_uniform","U_Test_uniform"]))then{
 		if(count(getObjectTextures player) > 0)then{
 			_defaultsides = [];

@@ -68,7 +68,8 @@ Halv_near_cityname = {
 	_textCity
 };
 
-if(_spawnNearJammer)then{
+//if(_spawnNearJammer)then{
+if(false)then{
 	{
 		if((_x getVariable ["BUILD_OWNER", "-1"]) in [getPlayerUID player, Epoch_my_GroupUID])exitWith{//[getPlayerUID player, Epoch_my_GroupUID]
 			_jamvar = getPos _x;

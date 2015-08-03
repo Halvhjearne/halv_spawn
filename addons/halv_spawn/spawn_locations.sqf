@@ -129,6 +129,24 @@ Halv_spawns = switch(toLower worldName)do{
 			[[2884.57,17167.5],1]	//Vang
 		]
 	};
+	case "australia":{
+		[
+			[[17470.4,33464.90],0,"Darwin"],
+			[[37882.1,19902.9],0,"Brisbane"],
+			[[5471.57,18521.3],0,"Perth"],
+			[[22093.7,25537.9],0,"Alice Springs"],
+			[[20772.5,12830.5],0,"Port Lincoln"],
+			[[25223.7,12851.9],0,"Adelaide"],
+			[[31069.2,10465.7],0,"Melbourne"],
+			[[36506.2,12936.5],0,"Sydney"],
+			[[28516.1,35189.4],0,"Weipa"],
+			[[32017.5,29801.8],0,"CairnsWeipa"],
+			[[31111.3,19988.5],0,"Toowoomba"],
+			[[27615.3,16953.2],0,"Broken Hills"],
+			[[35386.5,8526.27],0,"Eden"],
+			[[33097.9,3692.18],0,"Tasmania"]
+		]
+	};
 /* //create new world spawns, use lower case letters only or it will not be detected (only [x,y] needed)
 	case "myworldname":{
 		[

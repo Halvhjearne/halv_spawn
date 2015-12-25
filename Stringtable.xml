@@ -3,8 +3,8 @@
 	<Package name="HALVSpawn">
 		<Container name="Spawn Dialogs Strings">
 			<Key ID="STR_HALV_TS3">
-				<Original>TS3: halv.ddns.net:9995</Original>
-				<English>TS3: halv.ddns.net:9995</English>
+				<Original>TS3: INSERT TS INFO</Original>
+				<English>TS3: INSERT TS INFO</English>
 			</Key>
 			<Key ID="STR_HALV_SELECT_SPAWN">
 				<Original>Select Spawn</Original>
